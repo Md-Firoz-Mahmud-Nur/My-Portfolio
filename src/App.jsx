@@ -2,6 +2,7 @@ import Navbar from "./Components/Navbar";
 import Header from "./Components/Header";
 import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
+import Education from "./Components/Education";
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
       <Header></Header>
       <Skills></Skills>
       <Projects></Projects>
+      <Education></Education>
     </div>
   );
 }
