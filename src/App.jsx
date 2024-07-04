@@ -1,6 +1,7 @@
 import Navbar from "./Components/Navbar";
 import Header from "./Components/Header";
 import Skills from "./Components/Skills";
+import Projects from "./Components/Projects";
 
 export default function App() {
   return (
@@ -8,6 +9,7 @@ export default function App() {
       <Navbar></Navbar>
       <Header></Header>
       <Skills></Skills>
+      <Projects></Projects>
     </div>
   );
 }
