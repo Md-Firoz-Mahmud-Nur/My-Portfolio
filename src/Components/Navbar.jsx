@@ -4,6 +4,11 @@ const Navbar = () => {
   const links = (
     <>
       <li>
+        <a href="#" className="mx-2">
+          Home
+        </a>
+      </li>
+      <li>
         <a href="#skills" className="mx-2">
           Skills
         </a>
@@ -14,19 +19,28 @@ const Navbar = () => {
         </a>
       </li>
       <li>
+        <a href="#education" className="mx-2">
+          Education
+        </a>
+      </li>
+      <li>
         <a href="#contact" className="mx-2">
           Contact
         </a>
       </li>
       <li>
-        <a href="#resume" className="mx-2">
+        <a
+          href="/CURRICULUM VITAE.pdf"
+          download="/CURRICULUM VITAE.pdf"
+          className="mx-2"
+        >
           Resume
         </a>
       </li>
     </>
   );
   return (
-    <div className="navbar bg-base-100">
+    <div className="navbar sticky top-0 z-10 rounded bg-base-300 via-transparent">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -52,7 +66,7 @@ const Navbar = () => {
             {links}
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl">My Portfolio</a>
+        <a className="btn btn-ghost text-xl">Md. Firoz Mahmud Nur</a>
       </div>
       <div className="navbar-end hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>

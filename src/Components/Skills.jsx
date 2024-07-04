@@ -1,16 +1,47 @@
-import React from 'react';
+import html5 from "../assets/html5.png";
+import css3 from "../assets/css3.png";
+import tailwind from "../assets/tailwind.png";
+import js from "../assets/js.png";
+import react from "../assets/react.png";
+import mongo from "../assets/mongo.png";
+import node from "../assets/node.png";
+import express from "../assets/express.png";
+import firebase from "../assets/firebase.png";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 
 const Skills = () => {
+  const image = [
+    html5,
+    css3,
+    tailwind,
+    js,
+    react,
+    mongo,
+    node,
+    express,
+    firebase,
+  ];
+
   return (
-    <section id="skills" className="p-20 bg-gray-100">
-      <h2 className="text-4xl text-center mb-10">Skills</h2>
-      <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-        <div className="bg-white p-6 rounded shadow">React</div>
-        <div className="bg-white p-6 rounded shadow">Tailwind CSS</div>
-        <div className="bg-white p-6 rounded shadow">JavaScript</div>
-        <div className="bg-white p-6 rounded shadow">HTML</div>
+    <div className="mb-12 md:mb-16 lg:mb-24" id="skills">
+      <h2 className="mx-auto mb-12 max-w-max pb-2 text-center text-3xl font-bold tracking-tight md:mb-16 md:text-4xl">
+        My Skills
+      </h2>
+      <div className="lg:gal-8 flex flex-wrap items-center justify-center gap-6">
+        {image.map((img, i) => (
+          <div
+            data-aos="fade-down"
+            data-aos-duration="500"
+            key={i}
+            className="w-[100px] rounded-lg border border-gray-600 p-3 shadow-lg transition duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-gray-600 md:w-[150px]"
+          >
+            <img src={img} alt="" className="w-full" />
+          </div>
+        ))}
       </div>
-    </section>
+    </div>
   );
 };
 
