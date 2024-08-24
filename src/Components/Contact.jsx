@@ -35,7 +35,7 @@ const Contact = () => {
                 data-aos-duration="500"
               >
                 <FaPhoneSquareAlt className="mr-2 inline" />
-                <span className="font-medium ">+880 1797-626050</span>
+                <span className="font-medium">+880 1797-626050</span>
               </a>
               <a
                 href="mailto:firoznur5@gmail.com"
@@ -44,9 +44,7 @@ const Contact = () => {
                 data-aos-duration="500"
               >
                 <MdEmail className="mr-2 inline" />
-                <span className="font-medium ">
-                  firoznur5@gmail.com
-                </span>
+                <span className="font-medium">firoznur5@gmail.com</span>
               </a>
               <div className="flex items-center gap-4">
                 <a
@@ -56,20 +54,18 @@ const Contact = () => {
                   data-aos="fade-up"
                   data-aos-duration="500"
                 >
-                  <FaFacebook className="mr-2 inline"/>
-                    <span className="font-medium ">
-                      Nur
-                    </span>
+                  <FaFacebook className="mr-2 inline" />
+                  <span className="font-medium">Nur</span>
                 </a>
               </div>
             </div>
           </div>
         </div>
         <div className="w-full text-black">
-          <form action="https://getform.io/f/pbgxxeya" method="post">
+          <form action="https://getform.io/f/bxojjzpa" method="post">
             <div className="mb-3 w-full">
               <label
-                className="mb-[2px] block font-medium "
+                className="mb-[2px] block font-medium"
                 htmlFor="exampleInput90"
               >
                 Name
@@ -85,7 +81,7 @@ const Contact = () => {
 
             <div className="mb-3 w-full">
               <label
-                className="mb-[2px] block font-medium "
+                className="mb-[2px] block font-medium"
                 htmlFor="exampleInput90"
               >
                 Email
@@ -101,7 +97,7 @@ const Contact = () => {
 
             <div className="mb-3 w-full">
               <label
-                className="mb-[2px] block font-medium "
+                className="mb-[2px] block font-medium"
                 htmlFor="exampleInput90"
               >
                 Message
@@ -115,11 +111,12 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="mb-6 inline-block w-full rounded  px-6 py-2.5 text-lg font-medium bg-black text-white uppercase leading-normal  hover:shadow-md"
+              className="mb-6 inline-block w-full rounded bg-black px-6 py-2.5 text-lg font-medium uppercase leading-normal text-white hover:shadow-md"
             >
               Send
             </button>
           </form>
+          
         </div>
       </div>
     </div>

@@ -1,6 +1,6 @@
 const Header = () => {
   return (
-    <div className="flex">
+    <div className="flex flex-col-reverse md:flex-row">
       <header
         id="header"
         className="flex-grow bg-white p-10 text-center text-gray-800"
