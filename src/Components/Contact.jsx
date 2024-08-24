@@ -1,7 +1,6 @@
-import { FaPhoneSquareAlt } from "react-icons/fa";
+import { FaPhoneSquareAlt, FaWhatsappSquare } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaFacebook } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa6";
 import AOS from "aos";
 import "aos/dist/aos.css";
 AOS.init();
@@ -35,6 +34,15 @@ const Contact = () => {
                 data-aos-duration="500"
               >
                 <FaPhoneSquareAlt className="mr-2 inline" />
+                <span className="font-medium">+880 1797-626050</span>
+              </a>
+              <a
+                href="https://wa.me/8801797626050?text=Hi%20Md.%20Firoz%20Mahmud%20Nur,%20I%20came%20across%20your%20portfolio%20website%20and%20would%20like%20to%20connect%20with%20you."
+                className="flex items-center text-lg"
+                data-aos="fade-up"
+                data-aos-duration="500"
+              >
+                <FaWhatsappSquare className="mr-2 inline" />
                 <span className="font-medium">+880 1797-626050</span>
               </a>
               <a
@@ -116,7 +124,6 @@ const Contact = () => {
               Send
             </button>
           </form>
-          
         </div>
       </div>
     </div>
