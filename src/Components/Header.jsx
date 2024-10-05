@@ -52,6 +52,16 @@ const Header = () => {
               Download Resume
             </a>
           </button>
+          <br />
+          <button className="btn btn-outline mt-4 text-lg">
+            <a
+              href="/Resume of Md Firoz Mahmud Nur.pdf"
+              download="/Resume of Md Firoz Mahmud Nur.pdf"
+              className="mx-2"
+            >
+              Download Resume
+            </a>
+          </button>
         </p>
       </header>
       <div className="relative flex items-center justify-center p-10">
