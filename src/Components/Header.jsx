@@ -42,7 +42,7 @@ const Header = () => {
             Email
           </a>
           .
-          <br />
+          {/* <br />
           <button className="btn btn-outline mt-4 text-lg">
             <a
               href="/CURRICULUM VITAE.pdf"
@@ -51,7 +51,7 @@ const Header = () => {
             >
               Download Resume
             </a>
-          </button>
+          </button> */}
           <br />
           <button className="btn btn-outline mt-4 text-lg">
             <a
