@@ -42,16 +42,6 @@ const Header = () => {
             Email
           </a>
           .
-          {/* <br />
-          <button className="btn btn-outline mt-4 text-lg">
-            <a
-              href="/CURRICULUM VITAE.pdf"
-              download="/CURRICULUM VITAE.pdf"
-              className="mx-2"
-            >
-              Download Resume
-            </a>
-          </button> */}
           <br />
           <button className="btn btn-outline mt-4 text-lg">
             <a
