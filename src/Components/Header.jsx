@@ -8,12 +8,12 @@ const Header = () => {
         <h1 className="mb-4 text-4xl font-semibold">Md. Firoz Mahmud Nur</h1>
         <p className="mb-4 text-xl">Front-End Web Developer</p>
         <p className="mx-auto max-w-xl">
-          I'm a passionate and dedicated front-end developer with a keen eye for
-          design and a strong understanding of user experience. I am currently
-          looking for opportunities to work on challenging projects and
-          contribute to the growth of the industry. Feel free to reach out if
-          you're interested in collaborating on a project or just want to know
-          more about me.
+          I&apos;m a passionate and dedicated front-end developer with a keen
+          eye for design and a strong understanding of user experience. I am
+          currently looking for opportunities to work on challenging projects
+          and contribute to the growth of the industry. Feel free to reach out
+          if you&apos;re interested in collaborating on a project or just want
+          to know more about me.
           <br />
           <br />
           Connect with me on
