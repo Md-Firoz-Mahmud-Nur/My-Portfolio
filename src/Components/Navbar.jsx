@@ -37,6 +37,15 @@ const Navbar = () => {
           Resume
         </a>
       </li>
+      <li>
+        <a
+          href="/Resume of Md Firoz Mahmud Nur.pdf"
+          download="/Resume of Md Firoz Mahmud Nur.pdf"
+          className="mx-2"
+        >
+          Resume
+        </a>
+      </li>
     </>
   );
   return (
