@@ -28,7 +28,7 @@ const Navbar = () => {
           Contact
         </a>
       </li>
-      <li>
+      {/* <li>
         <a
           href="/CURRICULUM VITAE.pdf"
           download="/CURRICULUM VITAE.pdf"
@@ -36,7 +36,7 @@ const Navbar = () => {
         >
           Resume
         </a>
-      </li>
+      </li> */}
       <li>
         <a
           href="/Resume of Md Firoz Mahmud Nur.pdf"
