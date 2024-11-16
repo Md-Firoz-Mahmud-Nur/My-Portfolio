@@ -1,11 +1,9 @@
-import React from "react";
-
 const Projects = () => {
   return (
     <section id="projects">
       <h2 className="mb-10 text-center text-4xl text-gray-800">Projects</h2>
       <div className="container mx-auto grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
-        <div className="flex h-full flex-col rounded border border-black p-6 shadow hover:shadow-2xl">
+        <div className="mx-4 flex h-full flex-col rounded border border-black p-6 shadow hover:shadow-2xl sm:mx-1">
           <h3 className="mb-2 text-2xl font-semibold">1. Fit N Flex Arena</h3>
           <img
             src="https://i.ibb.co/jb9sd3J/Screenshot-2024-07-04-172855.png"
@@ -49,7 +47,7 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="flex h-full flex-col rounded border border-black p-6 shadow hover:shadow-2xl">
+        <div className="mx-4 flex h-full flex-col rounded border border-black p-6 shadow hover:shadow-2xl sm:mx-1">
           <h3 className="mb-2 text-2xl font-semibold">2. Food Fare</h3>
           <img
             src="https://i.ibb.co/ZMp1FJT/Screenshot-2024-07-04-172925.png"
@@ -93,7 +91,7 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="flex h-full flex-col rounded border border-black p-6 shadow hover:shadow-2xl">
+        <div className="flex h-full flex-col rounded border border-black p-6 shadow hover:shadow-2xl mx-4 sm:mx-1">
           <h3 className="mb-2 text-2xl font-semibold">3. Dream Tourism</h3>
           <img
             src="https://i.ibb.co/dJwqRMs/Screenshot-2024-07-04-173015.png"
