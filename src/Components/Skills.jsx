@@ -29,7 +29,7 @@ const Skills = () => {
       <h2 className="mx-auto mb-12 max-w-max pb-2 text-center text-3xl font-bold tracking-tight md:mb-16 md:text-4xl">
         My Skills
       </h2>
-      <div className="lg:gal-8 flex flex-wrap items-center justify-center gap-6">
+      <div className="flex flex-wrap items-center justify-center gap-6 px-4 sm:px-0 lg:gap-8">
         {image.map((img, i) => (
           <div
             data-aos="fade-down"

@@ -33,7 +33,7 @@ const Header = () => {
             className="pl-1 text-blue-500 hover:underline"
           >
             GitHub
-          </a>
+          </a>{" "}
           or{" "}
           <a
             href="mailto:firoznur5@gmail.com"
@@ -54,7 +54,8 @@ const Header = () => {
           </button>
         </p>
       </header>
-      <div className="relative flex items-center justify-center p-10">
+      {/* Have responsive issue */}
+      {/* <div className="relative flex items-center justify-center p-10">
         <div className="relative z-10 h-48 w-48">
           <img
             className="h-56 w-56 border border-black object-cover object-top"
@@ -68,7 +69,7 @@ const Header = () => {
             style={{ clipPath: "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)" }}
           ></div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
