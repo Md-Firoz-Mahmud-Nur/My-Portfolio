@@ -84,6 +84,7 @@ const Contact = () => {
                 className="w-full rounded-md border px-2 py-2 outline-none"
                 id="exampleInput90"
                 placeholder="Name"
+                required
               />
             </div>
 
@@ -100,6 +101,7 @@ const Contact = () => {
                 className="w-full rounded-md border px-2 py-2 outline-none"
                 id="exampleInput90"
                 placeholder="Enter your email address"
+                required
               />
             </div>
 
@@ -114,6 +116,7 @@ const Contact = () => {
                 className="h-20 w-full rounded-[5px] border px-2 py-2 outline-none"
                 name="message"
                 id="message"
+                required
               ></textarea>
             </div>
 

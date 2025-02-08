@@ -2,19 +2,64 @@ const Navbar = () => {
   const links = (
     <>
       <li>
-        <a href="#">Home</a>
+        <a
+          onClick={(e) => {
+            e.preventDefault();
+            document
+              .getElementById("home")
+              .scrollIntoView({ behavior: "smooth" });
+          }}
+        >
+          Home
+        </a>
       </li>
       <li>
-        <a href="#skills">Skills</a>
+        <a
+          onClick={(e) => {
+            e.preventDefault();
+            document
+              .getElementById("skills")
+              .scrollIntoView({ behavior: "smooth" });
+          }}
+        >
+          Skills
+        </a>
       </li>
       <li>
-        <a href="#projects">Projects</a>
+        <a
+          onClick={(e) => {
+            e.preventDefault();
+            document
+              .getElementById("projects")
+              .scrollIntoView({ behavior: "smooth" });
+          }}
+        >
+          Projects
+        </a>
       </li>
       <li>
-        <a href="#education">Education</a>
+        <a
+          onClick={(e) => {
+            e.preventDefault();
+            document
+              .getElementById("education")
+              .scrollIntoView({ behavior: "smooth" });
+          }}
+        >
+          Education
+        </a>
       </li>
       <li>
-        <a href="#contact">Contact</a>
+        <a
+          onClick={(e) => {
+            e.preventDefault();
+            document
+              .getElementById("contact")
+              .scrollIntoView({ behavior: "smooth" });
+          }}
+        >
+          Contact
+        </a>
       </li>
       <li>
         <a
