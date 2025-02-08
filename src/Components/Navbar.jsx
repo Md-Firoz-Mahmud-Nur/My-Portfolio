@@ -5,9 +5,10 @@ const Navbar = () => {
         <a
           onClick={(e) => {
             e.preventDefault();
-            document
-              .getElementById("home")
-              .scrollIntoView({ behavior: "smooth" });
+            window.scrollTo({
+              top: document.getElementById("home").offsetTop - 68,
+              behavior: "smooth",
+            });
           }}
         >
           Home
@@ -17,9 +18,10 @@ const Navbar = () => {
         <a
           onClick={(e) => {
             e.preventDefault();
-            document
-              .getElementById("skills")
-              .scrollIntoView({ behavior: "smooth" });
+            window.scrollTo({
+              top: document.getElementById("skills").offsetTop - 68,
+              behavior: "smooth",
+            });
           }}
         >
           Skills
@@ -29,9 +31,10 @@ const Navbar = () => {
         <a
           onClick={(e) => {
             e.preventDefault();
-            document
-              .getElementById("projects")
-              .scrollIntoView({ behavior: "smooth" });
+            window.scrollTo({
+              top: document.getElementById("projects").offsetTop - 68,
+              behavior: "smooth",
+            });
           }}
         >
           Projects
@@ -41,9 +44,10 @@ const Navbar = () => {
         <a
           onClick={(e) => {
             e.preventDefault();
-            document
-              .getElementById("education")
-              .scrollIntoView({ behavior: "smooth" });
+            window.scrollTo({
+              top: document.getElementById("education").offsetTop - 68,
+              behavior: "smooth",
+            });
           }}
         >
           Education
@@ -53,9 +57,10 @@ const Navbar = () => {
         <a
           onClick={(e) => {
             e.preventDefault();
-            document
-              .getElementById("contact")
-              .scrollIntoView({ behavior: "smooth" });
+            window.scrollTo({
+              top: document.getElementById("contact").offsetTop - 68,
+              behavior: "smooth",
+            });
           }}
         >
           Contact
