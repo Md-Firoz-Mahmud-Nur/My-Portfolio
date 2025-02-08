@@ -54,22 +54,13 @@ const Header = () => {
           </button>
         </p>
       </header>
-      {/* Have responsive issue */}
-      {/* <div className="relative flex items-center justify-center p-10">
-        <div className="relative z-10 h-48 w-48">
-          <img
-            className="h-56 w-56 border border-black object-cover object-top"
-            src="https://i.ibb.co/ZMzsPbm/Apply-Basic-Image.jpg"
-            alt=""
-          />
-        </div>
-        <div className="absolute inset-0 z-0 flex items-center justify-center">
-          <div
-            className="h-64 w-64 rotate-45 transform rounded-full bg-blue-500"
-            style={{ clipPath: "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)" }}
-          ></div>
-        </div>
-      </div> */}
+      <div className="flex items-center justify-center p-10">
+        <img
+          className="h-56 min-w-[168px] border border-black object-cover object-bottom"
+          src="https://i.ibb.co/ZMzsPbm/Apply-Basic-Image.jpg"
+          alt=""
+        />
+      </div>
     </div>
   );
 };
