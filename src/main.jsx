@@ -7,15 +7,22 @@ import AnimatedCursor from "react-animated-cursor";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <AnimatedCursor
-      innerSize={0}
-      color="#000"
+      innerSize={6}
       outerSize={24}
+      outerScale={2}
+      outerAlpha={0}
       showSystemCursor={true}
-      trailingSpeed={5}
-      outerStyle={{
-        border: "2px solid #707070",
+      trailingSpeed={7}
+      innerStyle={{
+        backgroundColor: "#fff",
+        mixBlendMode: "difference",
+        boxShadow: "0 0 0 .5px #fff",
       }}
-      clickables={[{ target: ".custom" }]}
+      outerStyle={{
+        backgroundColor: "transparent",
+        mixBlendMode: "exclusion",
+        boxShadow: "0 0 0 2px #fff",
+      }}
     />
     <App />
   </React.StrictMode>,
