@@ -5,8 +5,10 @@ const Header = () => {
         id="header"
         className="flex-grow bg-white p-10 text-center text-gray-800"
       >
-        <h1 className="mb-4 text-4xl font-semibold">Md. Firoz Mahmud Nur</h1>
-        <p className="mb-4 text-xl">Front-End Web Developer</p>
+        <h1 className="mb-4 text-xl font-bold sm:text-4xl sm:font-semibold">
+          Md. Firoz Mahmud Nur
+        </h1>
+        <p className="mb-4 text-lg sm:text-xl">Front-End Web Developer</p>
         <p className="mx-auto max-w-xl">
           I&apos;m a passionate and dedicated front-end developer with a keen
           eye for design and a strong understanding of user experience. I am
@@ -17,6 +19,7 @@ const Header = () => {
           <br />
           <br />
           Connect with me on
+          <br />
           <a
             href="https://wa.me/8801797626050?text=Hi%20Md.%20Firoz%20Mahmud%20Nur,%20I%20came%20across%20your%20portfolio%20website%20and%20would%20like%20to%20connect%20with%20you."
             target="_blank"
