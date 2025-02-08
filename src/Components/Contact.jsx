@@ -26,7 +26,7 @@ const Contact = () => {
               data-aos="zoom-in"
               data-aos-duration="500"
             />
-            <div className="space-y-4">
+            <div className="space-y-4 px-4 lg:px-0">
               <a
                 href="tel:+880 1797-626050"
                 className="flex items-center text-lg"
@@ -69,7 +69,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="w-full text-black">
+        <div className="w-full px-4 text-black lg:px-0">
           <form action="https://getform.io/f/bxojjzpa" method="post">
             <div className="mb-3 w-full">
               <label
