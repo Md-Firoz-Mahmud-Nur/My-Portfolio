@@ -35,7 +35,7 @@ const Education = () => {
           </div>
 
           <div className="flex md:contents">
-            <div className="relative col-start-1 col-end-2 mx-auto">
+            <div className="relative col-start-1 col-end-2">
               <div className="flex h-full w-6 items-center justify-center">
                 <div className="h-full w-1"></div>
               </div>
