@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 const ProjectCard = ({
   title,
   image,
@@ -38,6 +40,16 @@ const ProjectCard = ({
       </p>
     </div>
   );
+};
+
+ProjectCard.propTypes = {
+  title: PropTypes.string,
+  image: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  clientLink: PropTypes.string.isRequired,
+  clientGithub: PropTypes.string.isRequired,
+  serverGithub: PropTypes.string.isRequired,
+  technologies: PropTypes.string.isRequired,
 };
 
 export default ProjectCard;
