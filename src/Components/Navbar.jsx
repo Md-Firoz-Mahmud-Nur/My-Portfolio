@@ -2,35 +2,24 @@ const Navbar = () => {
   const links = (
     <>
       <li>
-        <a href="#" className="mx-2">
-          Home
-        </a>
+        <a href="#">Home</a>
       </li>
       <li>
-        <a href="#skills" className="mx-2">
-          Skills
-        </a>
+        <a href="#skills">Skills</a>
       </li>
       <li>
-        <a href="#projects" className="mx-2">
-          Projects
-        </a>
+        <a href="#projects">Projects</a>
       </li>
       <li>
-        <a href="#education" className="mx-2">
-          Education
-        </a>
+        <a href="#education">Education</a>
       </li>
       <li>
-        <a href="#contact" className="mx-2">
-          Contact
-        </a>
+        <a href="#contact">Contact</a>
       </li>
       <li>
         <a
           href="/Resume of Md Firoz Mahmud Nur.pdf"
           download="/Resume of Md Firoz Mahmud Nur.pdf"
-          className="mx-2"
         >
           Resume
         </a>
