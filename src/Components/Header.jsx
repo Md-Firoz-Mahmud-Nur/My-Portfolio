@@ -11,7 +11,7 @@ const Header = () => {
         <p className="mb-4 max-w-min text-nowrap text-lg backdrop-blur-lg sm:text-xl">
           Front-End Web Developer
         </p>
-        <p className="mx-auto flex max-w-xl flex-col items-center justify-center">
+        <div className="mx-auto flex max-w-xl flex-col items-center justify-center">
           <div className="backdrop-blur-lg">
             I&apos;m a passionate and dedicated front-end developer with a keen
             eye for design and a strong understanding of user experience. I am
@@ -61,7 +61,7 @@ const Header = () => {
               </a>
             </button>
           </div>
-        </p>
+        </div>
       </header>
       <div className="flex items-center justify-center p-10">
         <img
