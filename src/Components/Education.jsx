@@ -16,12 +16,12 @@ const Education = () => {
               <div className="flex h-full w-6 items-center justify-center">
                 <div className="h-full w-1 rounded-t-full"></div>
               </div>
-              <div className="absolute top-1/2 -mt-3 h-6 w-6 rounded-full border-4 border-black bg-white"></div>
+              <div className="absolute top-1/2 -mt-3 h-6 w-6 rounded-full border-4 border-black backdrop-blur-lg"></div>
             </div>
             <div
               data-aos="fade-down"
               data-aos-duration="1000"
-              className="relative col-start-2 col-end-6 my-6 ml-4 rounded-xl bg-white p-4 text-gray-800 lg:w-[450px]"
+              className="relative col-start-2 col-end-6 my-6 ml-4 rounded-xl p-4 text-gray-800 backdrop-blur-lg lg:w-[450px]"
             >
               <p className="font-bold">HSC</p>
               <small>2019 - 2021</small>
@@ -39,12 +39,12 @@ const Education = () => {
               <div className="flex h-full w-6 items-center justify-center">
                 <div className="h-full w-1"></div>
               </div>
-              <div className="absolute top-1/2 -mt-3 h-6 w-6 rounded-full border-4 border-black bg-white"></div>
+              <div className="absolute top-1/2 -mt-3 h-6 w-6 rounded-full border-4 border-black backdrop-blur-lg"></div>
             </div>
             <div
               data-aos="fade-down"
               data-aos-duration="1000"
-              className="relative col-start-2 col-end-6 my-6 ml-4 rounded-xl bg-white p-4 text-gray-800 lg:w-[450px]"
+              className="relative col-start-2 col-end-6 my-6 ml-4 rounded-xl p-4 text-gray-800 backdrop-blur-lg lg:w-[450px]"
             >
               <p className="font-bold">B.Sc</p>
               <small>2021 - Present</small>

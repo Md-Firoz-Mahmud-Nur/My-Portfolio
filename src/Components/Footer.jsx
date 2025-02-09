@@ -1,8 +1,10 @@
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 p-4 text-center text-white">
-      <p>&copy; 2025 Md. Firoz Mahmud Nur. All rights reserved.</p>
-    </footer>
+    <div className="bg-gray-800">
+      <footer className="container mx-auto p-4 text-center text-white">
+        <p>&copy; 2025 Md. Firoz Mahmud Nur. All rights reserved.</p>
+      </footer>
+    </div>
   );
 };
 

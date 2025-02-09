@@ -10,7 +10,7 @@ const ProjectCard = ({
   technologies,
 }) => {
   return (
-    <div className="mx-4 flex h-full flex-col rounded border border-black p-6 shadow hover:shadow-2xl sm:mx-1">
+    <div className="mx-4 flex h-full flex-col rounded border border-black p-6 shadow backdrop-blur-lg hover:shadow-2xl sm:mx-1">
       <h3 className="mb-2 text-2xl font-semibold">{title}</h3>
       <img
         src={image}
