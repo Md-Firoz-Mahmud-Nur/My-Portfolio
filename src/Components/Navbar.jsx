@@ -110,6 +110,7 @@ const Navbar = () => {
             </ul>
           </div>
           <a
+          href="#home"
             onClick={(e) => {
               e.preventDefault();
               window.scrollTo({

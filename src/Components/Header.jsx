@@ -1,3 +1,6 @@
+import { FaGithub, FaWhatsapp } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
+
 const Header = () => {
   return (
     <div className="flex flex-col-reverse md:flex-row" id="home">
@@ -20,46 +23,38 @@ const Header = () => {
             if you&apos;re interested in collaborating on a project or just want
             to know more about me.
           </div>
-          <div className="backdrop-blur-lg">
+          <div className="text-xl font-semibold backdrop-blur-lg">
             <br />
             <br />
-            Connect with me on
-            <br />
-            <a
-              href="https://wa.me/8801797626050?text=Hi%20Md.%20Firoz%20Mahmud%20Nur,%20I%20came%20across%20your%20portfolio%20website%20and%20would%20like%20to%20connect%20with%20you."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="pl-1 text-[#0056b3] hover:underline"
-            >
-              WhatsApp
-            </a>
-            ,
-            <a
-              href="https://github.com/Md-Firoz-Mahmud-Nur"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="pl-1 text-[#0056b3] hover:underline"
-            >
-              GitHub
-            </a>{" "}
-            or{" "}
-            <a
-              href="mailto:firoznur5@gmail.com"
-              className="text-[#0056b3] hover:underline"
-            >
-              Email
-            </a>
-            .
-            <br />
-            {/* <button className="btn btn-outline mt-4 text-lg"> */}
+            Let&apos;s work together
+            <div className="flex items-center justify-center gap-4 py-4">
               <a
-                href="/Resume of Md Firoz Mahmud Nur.pdf"
-                download="/Resume of Md Firoz Mahmud Nur.pdf"
-                className=" btn btn-outline mt-4 text-lg"
+                href="https://wa.me/8801797626050?text=Hi%20Md.%20Firoz%20Mahmud%20Nur,%20I%20came%20across%20your%20portfolio%20website%20and%20would%20like%20to%20connect%20with%20you."
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Download Resume
+                <FaWhatsapp className="size-8" />
               </a>
-            {/* </button> */}
+              <a
+                href="https://github.com/Md-Firoz-Mahmud-Nur"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="pl-1"
+              >
+                <FaGithub className="size-8" />
+              </a>
+              <a href="mailto:firoznur5@gmail.com" className="hover:underline">
+                <SiGmail className="size-8" />
+              </a>
+            </div>
+
+            <a
+              href="/Resume of Md Firoz Mahmud Nur.pdf"
+              download="/Resume of Md Firoz Mahmud Nur.pdf"
+              className="btn btn-outline text-lg"
+            >
+              Download Resume
+            </a>
           </div>
         </div>
       </header>

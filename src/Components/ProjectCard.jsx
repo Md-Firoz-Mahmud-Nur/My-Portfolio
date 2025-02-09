@@ -1,4 +1,6 @@
 import PropTypes from "prop-types";
+import { CiGlobe } from "react-icons/ci";
+import { FaGithub } from "react-icons/fa";
 
 const ProjectCard = ({
   title,
@@ -23,20 +25,20 @@ const ProjectCard = ({
       <hr className="border-dashed border-gray-300" />
       <p>Technologies Used: {technologies}</p>
       <hr className="my-2 border-dashed border-gray-300" />
-      <p className="font-semibold">
+      <p className="flex items-center gap-2 pb-1 font-semibold">
         Client Side Link:{" "}
-        <a href={clientLink} className="text-[#0056b3] hover:underline">
-          Live Link
+        <a href={clientLink} className="text-[#0056b3]">
+          <CiGlobe className="size-5" />
         </a>{" "}
         |{" "}
-        <a href={clientGithub} className="text-[#0056b3] hover:underline">
-          GitHub
+        <a href={clientGithub}>
+          <FaGithub className="size-5" />
         </a>
       </p>
-      <p className="font-semibold">
+      <p className="flex items-center gap-2 font-semibold">
         Server Side Link:{" "}
-        <a href={serverGithub} className="text-[#0056b3] hover:underline">
-          GitHub
+        <a href={serverGithub}>
+          <FaGithub className="size-5" />
         </a>
       </p>
     </div>
