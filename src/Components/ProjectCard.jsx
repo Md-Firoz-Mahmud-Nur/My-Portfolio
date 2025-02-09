@@ -15,6 +15,7 @@ const ProjectCard = ({
       <img
         src={image}
         alt={title}
+        loading="lazy"
         className="mb-4 h-48 w-full rounded border border-black object-cover object-top shadow"
       />
       <p className="mb-2">{description}</p>

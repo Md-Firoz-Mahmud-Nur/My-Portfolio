@@ -21,7 +21,8 @@ const Contact = () => {
           <div className="flex flex-col justify-center gap-6 md:gap-8 lg:flex-row lg:items-center">
             <img
               src="https://i.ibb.co/ZMzsPbm/Apply-Basic-Image.jpg"
-              alt=""
+              alt="Md. Firoz Mahmud Nur - Web Developer"
+              loading="lazy"
               className="mx-auto size-[280px] rounded-full border-2 border-black object-cover object-top lg:mx-0"
               data-aos="zoom-in"
               data-aos-duration="500"
@@ -67,47 +68,6 @@ const Contact = () => {
                 </a>
               </div>
             </div>
-            {/* <div className="space-y-4 px-4 lg:px-0">
-              <a
-                href="tel:+880 1797-626050"
-                className="flex items-center text-lg"
-                data-aos="fade-up"
-                data-aos-duration="500"
-              >
-                <FaPhoneSquareAlt className="mr-2 inline" />
-                <span className="font-medium">+880 1797-626050</span>
-              </a>
-              <a
-                href="https://wa.me/8801797626050?text=Hi%20Md.%20Firoz%20Mahmud%20Nur,%20I%20came%20across%20your%20portfolio%20website%20and%20would%20like%20to%20connect%20with%20you."
-                className="flex items-center text-lg"
-                data-aos="fade-up"
-                data-aos-duration="500"
-              >
-                <FaWhatsappSquare className="mr-2 inline" />
-                <span className="font-medium">+880 1797-626050</span>
-              </a>
-              <a
-                href="mailto:firoznur5@gmail.com"
-                className="flex items-center text-lg"
-                data-aos="fade-up"
-                data-aos-duration="500"
-              >
-                <MdEmail className="mr-2 inline" />
-                <span className="font-medium">firoznur5@gmail.com</span>
-              </a>
-              <div className="flex items-center gap-4">
-                <a
-                  href="https://www.facebook.com/firoz.nur"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-aos="fade-up"
-                  data-aos-duration="500"
-                >
-                  <FaFacebook className="mr-2 inline" />
-                  <span className="font-medium">Nur</span>
-                </a>
-              </div>
-            </div> */}
           </div>
         </div>
         <div className="w-full px-4 text-black lg:px-0">

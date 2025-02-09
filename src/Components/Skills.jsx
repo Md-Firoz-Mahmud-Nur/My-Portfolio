@@ -37,7 +37,7 @@ const Skills = () => {
             key={i}
             className="w-[100px] rounded-lg border border-gray-600 p-3 shadow-lg backdrop-blur-lg transition duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-gray-600 md:w-[150px]"
           >
-            <img src={img} alt="" className="w-full" />
+            <img src={img} loading="lazy" alt="" className="w-full" />
           </div>
         ))}
       </div>

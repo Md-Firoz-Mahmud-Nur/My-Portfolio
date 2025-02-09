@@ -8,9 +8,9 @@ const Header = () => {
         <h1 className="mb-4 text-xl font-bold backdrop-blur-lg sm:text-4xl sm:font-semibold">
           Md. Firoz Mahmud Nur
         </h1>
-        <p className="mb-4 max-w-min text-nowrap text-lg backdrop-blur-lg sm:text-xl">
+        <h2 className="mb-4 max-w-min text-nowrap text-lg backdrop-blur-lg sm:text-xl">
           Front-End Web Developer
-        </p>
+        </h2>
         <div className="mx-auto flex max-w-xl flex-col items-center justify-center">
           <div className="backdrop-blur-lg">
             I&apos;m a passionate and dedicated front-end developer with a keen
@@ -67,7 +67,8 @@ const Header = () => {
         <img
           className="h-56 min-w-[168px] border border-black object-cover object-bottom"
           src="https://i.ibb.co/ZMzsPbm/Apply-Basic-Image.jpg"
-          alt=""
+          alt="Md. Firoz Mahmud Nur - Web Developer"
+          loading="lazy"
         />
       </div>
     </div>

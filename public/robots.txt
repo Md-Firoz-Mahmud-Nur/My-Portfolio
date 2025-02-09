@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://https://md-firoz-mahmud-nur.netlify.app/sitemap.xml
