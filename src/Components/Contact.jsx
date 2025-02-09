@@ -117,6 +117,7 @@ const Contact = () => {
                 className="h-20 w-full rounded-[5px] border px-2 py-2 outline-none"
                 name="message"
                 id="message"
+                placeholder="Enter your thoughts"
                 required
               ></textarea>
             </div>

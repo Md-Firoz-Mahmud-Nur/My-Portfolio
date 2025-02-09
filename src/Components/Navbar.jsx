@@ -3,6 +3,7 @@ const Navbar = () => {
     <>
       <li>
         <a
+          href="#home"
           onClick={(e) => {
             e.preventDefault();
             window.scrollTo({
@@ -16,6 +17,7 @@ const Navbar = () => {
       </li>
       <li>
         <a
+          href="#skills"
           onClick={(e) => {
             e.preventDefault();
             window.scrollTo({
@@ -29,6 +31,7 @@ const Navbar = () => {
       </li>
       <li>
         <a
+          href="#projects"
           onClick={(e) => {
             e.preventDefault();
             window.scrollTo({
@@ -42,6 +45,7 @@ const Navbar = () => {
       </li>
       <li>
         <a
+        href="#education"
           onClick={(e) => {
             e.preventDefault();
             window.scrollTo({
@@ -55,6 +59,7 @@ const Navbar = () => {
       </li>
       <li>
         <a
+        href="#contact"
           onClick={(e) => {
             e.preventDefault();
             window.scrollTo({
@@ -104,7 +109,18 @@ const Navbar = () => {
               {links}
             </ul>
           </div>
-          <a className="btn btn-ghost text-xl">Md. Firoz Mahmud Nur</a>
+          <a
+            onClick={(e) => {
+              e.preventDefault();
+              window.scrollTo({
+                top: document.getElementById("home").offsetTop - 68,
+                behavior: "smooth",
+              });
+            }}
+            className="btn btn-ghost text-xl"
+          >
+            Md. Firoz Mahmud Nur
+          </a>
         </div>
         <div className="navbar-end hidden lg:flex">
           <ul className="menu menu-horizontal px-1">{links}</ul>
