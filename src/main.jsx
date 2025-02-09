@@ -3,9 +3,11 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import AnimatedCursor from "react-animated-cursor";
+import ParticlesAnimation from "./ParticlesAnimation/ParticlesAnimation.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+    <ParticlesAnimation></ParticlesAnimation>
     <AnimatedCursor
       innerSize={6}
       outerSize={24}
