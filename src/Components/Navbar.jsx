@@ -82,7 +82,7 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="sticky top-0 z-20 bg-base-300">
+    <div className="sticky top-0 z-20  backdrop-blur-lg  shadow-md">
       <div className="container navbar mx-auto rounded via-transparent">
         <div className="navbar-start">
           <div className="dropdown">

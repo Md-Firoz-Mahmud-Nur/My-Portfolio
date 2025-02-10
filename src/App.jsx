@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 import Navbar from "./Components/Navbar";
 import Header from "./Components/Header";
 import Skills from "./Components/Skills";
@@ -8,10 +10,23 @@ import Footer from "./Components/Footer";
 import Hr from "./Components/Hr";
 
 export default function App() {
+  const [scrollY, setScrollY] = useState(0);
+  console.log(scrollY);
+  useEffect(() => {
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <>
       <Navbar></Navbar>
-      <div className="container mx-auto">
+      <div
+        className="container mx-auto"
+        style={{
+          clipPath: `inset(${Math.min(scrollY, scrollY)}px 0 0 0)`,
+        }}
+      >
         <Header></Header>
         <Hr></Hr>
         <Skills></Skills>
