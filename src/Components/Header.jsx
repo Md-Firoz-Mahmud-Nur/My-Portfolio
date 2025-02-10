@@ -32,6 +32,7 @@ const Header = () => {
                 href="https://wa.me/8801797626050?text=Hi%20Md.%20Firoz%20Mahmud%20Nur,%20I%20came%20across%20your%20portfolio%20website%20and%20would%20like%20to%20connect%20with%20you."
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="WhatsApp"
               >
                 <FaWhatsapp className="size-8" />
               </a>
@@ -39,15 +40,14 @@ const Header = () => {
                 href="https://github.com/Md-Firoz-Mahmud-Nur"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="pl-1"
+                aria-label="GitHub"
               >
                 <FaGithub className="size-8" />
               </a>
-              <a href="mailto:firoznur5@gmail.com" className="hover:underline">
+              <a href="mailto:firoznur5@gmail.com" aria-label="Gmail">
                 <SiGmail className="size-8" />
               </a>
             </div>
-
             <a
               href="/Resume of Md Firoz Mahmud Nur.pdf"
               download="/Resume of Md Firoz Mahmud Nur.pdf"

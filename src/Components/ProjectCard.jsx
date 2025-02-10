@@ -27,17 +27,17 @@ const ProjectCard = ({
       <hr className="my-2 border-dashed border-gray-300" />
       <p className="flex items-center gap-2 pb-1 font-semibold">
         Client Side Link:{" "}
-        <a href={clientLink} className="text-[#0056b3]">
+        <a href={clientLink} className="text-[#0056b3]" aria-label="Live Link">
           <CiGlobe className="size-5" />
         </a>{" "}
         |{" "}
-        <a href={clientGithub}>
+        <a href={clientGithub} aria-label="GitHub Client">
           <FaGithub className="size-5" />
         </a>
       </p>
       <p className="flex items-center gap-2 font-semibold">
         Server Side Link:{" "}
-        <a href={serverGithub}>
+        <a href={serverGithub} aria-label="GitHub Server">
           <FaGithub className="size-5" />
         </a>
       </p>
