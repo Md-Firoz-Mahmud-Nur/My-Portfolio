@@ -11,7 +11,7 @@ import Hr from "./Components/Hr";
 
 export default function App() {
   const [scrollY, setScrollY] = useState(0);
-  console.log(scrollY);
+
   useEffect(() => {
     const handleScroll = () => setScrollY(window.scrollY);
     window.addEventListener("scroll", handleScroll);
@@ -24,7 +24,7 @@ export default function App() {
       <div
         className="container mx-auto"
         style={{
-          clipPath: `inset(${Math.min(scrollY, scrollY)}px 0 0 0)`,
+          clipPath: `inset(${scrollY}px 0 0 0)`,
         }}
       >
         <Header></Header>
