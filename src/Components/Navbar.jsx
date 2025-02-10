@@ -1,4 +1,15 @@
+import { useState } from "react";
+
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const closeDropdown = () => {
+    setIsOpen(false);
+  };
   const links = (
     <>
       <li>
@@ -10,6 +21,7 @@ const Navbar = () => {
               top: document.getElementById("home").offsetTop - 68,
               behavior: "smooth",
             });
+            closeDropdown();
           }}
         >
           Home
@@ -24,6 +36,7 @@ const Navbar = () => {
               top: document.getElementById("skills").offsetTop - 68,
               behavior: "smooth",
             });
+            closeDropdown();
           }}
         >
           Skills
@@ -38,6 +51,7 @@ const Navbar = () => {
               top: document.getElementById("projects").offsetTop - 68,
               behavior: "smooth",
             });
+            closeDropdown();
           }}
         >
           Projects
@@ -45,13 +59,14 @@ const Navbar = () => {
       </li>
       <li>
         <a
-        href="#education"
+          href="#education"
           onClick={(e) => {
             e.preventDefault();
             window.scrollTo({
               top: document.getElementById("education").offsetTop - 68,
               behavior: "smooth",
             });
+            closeDropdown();
           }}
         >
           Education
@@ -59,13 +74,14 @@ const Navbar = () => {
       </li>
       <li>
         <a
-        href="#contact"
+          href="#contact"
           onClick={(e) => {
             e.preventDefault();
             window.scrollTo({
               top: document.getElementById("contact").offsetTop - 68,
               behavior: "smooth",
             });
+            closeDropdown();
           }}
         >
           Contact
@@ -75,6 +91,9 @@ const Navbar = () => {
         <a
           href="/Resume of Md Firoz Mahmud Nur.pdf"
           download="/Resume of Md Firoz Mahmud Nur.pdf"
+          onClick={() => {
+            closeDropdown();
+          }}
         >
           Resume
         </a>
@@ -82,11 +101,16 @@ const Navbar = () => {
     </>
   );
   return (
-    <div className="sticky top-0 z-20  backdrop-blur-lg  shadow-md">
+    <div className="sticky top-0 z-20 shadow-md backdrop-blur-lg">
       <div className="container navbar mx-auto rounded via-transparent">
         <div className="navbar-start">
           <div className="dropdown">
-            <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <div
+              tabIndex={0}
+              role="button"
+              className="btn btn-ghost lg:hidden"
+              onClick={toggleDropdown}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -102,15 +126,17 @@ const Navbar = () => {
                 />
               </svg>
             </div>
-            <ul
-              tabIndex={0}
-              className="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-base-100 p-2 shadow"
-            >
-              {links}
-            </ul>
+            {isOpen && (
+              <ul
+                tabIndex={0}
+                className="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-base-100 p-2 shadow"
+              >
+                {links}
+              </ul>
+            )}
           </div>
           <a
-          href="#home"
+            href="#home"
             onClick={(e) => {
               e.preventDefault();
               window.scrollTo({
