@@ -8,6 +8,7 @@ import Education from "./Components/Education";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import Hr from "./Components/Hr";
+import SmoothScroll from "./SmoothScroll/SmoothScroll";
 
 export default function App() {
   const [scrollY, setScrollY] = useState(0);
@@ -20,24 +21,26 @@ export default function App() {
 
   return (
     <>
-      <Navbar></Navbar>
-      <div
-        className="container mx-auto"
-        style={{
-          clipPath: `inset(${scrollY}px 0 0 0)`,
-        }}
-      >
-        <Header></Header>
-        <Hr></Hr>
-        <Skills></Skills>
-        <Hr></Hr>
-        <Projects></Projects>
-        <Hr></Hr>
-        <Education></Education>
-        <Hr></Hr>
-        <Contact></Contact>
-      </div>
-      <Footer></Footer>
+      <SmoothScroll>
+        <Navbar></Navbar>
+        <div
+          className="container mx-auto"
+          style={{
+            clipPath: `inset(${scrollY}px 0 0 0)`,
+          }}
+        >
+          <Header></Header>
+          <Hr></Hr>
+          <Skills></Skills>
+          <Hr></Hr>
+          <Projects></Projects>
+          <Hr></Hr>
+          <Education></Education>
+          <Hr></Hr>
+          <Contact></Contact>
+        </div>
+        <Footer></Footer>
+      </SmoothScroll>
     </>
   );
 }
