@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
 
@@ -27,6 +28,10 @@ const SmoothScroll = ({ children }) => {
   }, []);
 
   return <>{children}</>;
+};
+
+SmoothScroll.propTypes = {
+  children: PropTypes.node.isRequired,
 };
 
 export default SmoothScroll;
