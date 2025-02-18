@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 import { useEffect } from "react";
-import Lenis from "@studio-freight/lenis";
+import Lenis from "lenis";
 
 const SmoothScroll = ({ children }) => {
   useEffect(() => {
