@@ -5,14 +5,7 @@ import Lenis from "lenis";
 const SmoothScroll = ({ children }) => {
   useEffect(() => {
     const lenis = new Lenis({
-      duration: 7,
-      easing: (t) => 1 - Math.pow(1 - t, 3),
-      smooth: true,
-      smoothWheel: true,
-      smoothTouch: true,
-      lerp: 0.1,
-      wheelMultiplier: 0.8,
-      touchMultiplier: 1.0,
+      easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
     });
 
     function raf(time) {
