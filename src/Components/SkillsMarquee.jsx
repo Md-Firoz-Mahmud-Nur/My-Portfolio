@@ -1,3 +1,4 @@
+import Marquee from "react-fast-marquee";
 import html5 from "../assets/html5.png";
 import css3 from "../assets/css3.png";
 import tailwind from "../assets/tailwind.png";
@@ -26,7 +27,12 @@ const SkillsMarquee = () => {
       <h2 className="mx-auto mb-12 max-w-max pb-2 text-center text-3xl font-bold tracking-tight md:mb-16 md:text-4xl">
         My Skills
       </h2>
-      <div className="flex flex-wrap items-center justify-center gap-6 px-4 sm:px-0 lg:gap-8">
+      <Marquee
+        className="h-[200px] w-full overflow-hidden"
+        direction="left"
+        scrollDelay={20}
+        pauseOnHover
+      >
         {image.map((img, i) => (
           <div
             key={i}
@@ -35,7 +41,7 @@ const SkillsMarquee = () => {
             <img src={img} loading="lazy" alt="" className="w-full" />
           </div>
         ))}
-      </div>
+      </Marquee>
     </div>
   );
 };
