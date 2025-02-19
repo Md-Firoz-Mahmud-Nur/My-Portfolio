@@ -1,15 +1,18 @@
 import AnimatedCursor from "react-animated-cursor";
 import { useEffect, useState } from "react";
+import CheckDesktop from "../Hooks/CheckDesktop";
 
 const CursorAnimation = () => {
-  const [showCursor, setShowCursor] = useState(false);
+  // const [showCursor, setShowCursor] = useState(false);
 
-  useEffect(() => {
-    const hasMouse = window.matchMedia(
-      "(hover: hover) and (pointer: fine)",
-    ).matches;
-    setShowCursor(hasMouse);
-  }, []);
+  // useEffect(() => {
+  //   const hasMouse = window.matchMedia(
+  //     "(hover: hover) and (pointer: fine)",
+  //   ).matches;
+  //   setShowCursor(hasMouse);
+  // }, []);
+
+  const showCursor = CheckDesktop();
 
   return (
     <>
