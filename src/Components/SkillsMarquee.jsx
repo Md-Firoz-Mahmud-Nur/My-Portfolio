@@ -7,9 +7,6 @@ import mongo from "../assets/mongo.png";
 import node from "../assets/node.png";
 import express from "../assets/express.png";
 import firebase from "../assets/firebase.png";
-import AOS from "aos";
-import "aos/dist/aos.css";
-AOS.init();
 
 const SkillsMarquee = () => {
   const image = [
@@ -32,8 +29,6 @@ const SkillsMarquee = () => {
       <div className="flex flex-wrap items-center justify-center gap-6 px-4 sm:px-0 lg:gap-8">
         {image.map((img, i) => (
           <div
-            data-aos="fade-down"
-            data-aos-duration="500"
             key={i}
             className="w-[100px] rounded-lg border border-gray-600 p-3 shadow-lg backdrop-blur-lg transition duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-gray-600 md:w-[150px]"
           >
