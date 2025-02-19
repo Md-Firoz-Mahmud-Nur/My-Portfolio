@@ -9,6 +9,7 @@ import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 import Hr from "./Components/Hr";
 import SmoothScroll from "./SmoothScroll/SmoothScroll";
+import SkillsMarquee from "./Components/SkillsMarquee";
 
 export default function App() {
   const [scrollY, setScrollY] = useState(0);
@@ -30,6 +31,8 @@ export default function App() {
           }}
         >
           <Header></Header>
+          <Hr></Hr>
+          <SkillsMarquee></SkillsMarquee>
           <Hr></Hr>
           <Skills></Skills>
           <Hr></Hr>
