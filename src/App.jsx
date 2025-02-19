@@ -33,14 +33,17 @@ export default function App() {
           }}
         >
           <Header></Header>
-          {showCursor && (
+          {showCursor ? (
             <>
               <Hr></Hr>
               <SkillsMarquee></SkillsMarquee>
             </>
+          ) : (
+            <>
+              <Hr></Hr>
+              <Skills></Skills>
+            </>
           )}
-          <Hr></Hr>
-          <Skills></Skills>
           <Hr></Hr>
           <Projects></Projects>
           <Hr></Hr>
