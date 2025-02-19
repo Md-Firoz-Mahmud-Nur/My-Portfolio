@@ -10,8 +10,10 @@ import Footer from "./Components/Footer";
 import Hr from "./Components/Hr";
 import SmoothScroll from "./SmoothScroll/SmoothScroll";
 import SkillsMarquee from "./Components/SkillsMarquee";
+import CheckDesktop from "./Hooks/CheckDesktop";
 
 export default function App() {
+  const showCursor = CheckDesktop();
   const [scrollY, setScrollY] = useState(0);
 
   useEffect(() => {
@@ -31,8 +33,12 @@ export default function App() {
           }}
         >
           <Header></Header>
-          <Hr></Hr>
-          <SkillsMarquee></SkillsMarquee>
+          {showCursor && (
+            <>
+              <Hr></Hr>
+              <SkillsMarquee></SkillsMarquee>
+            </>
+          )}
           <Hr></Hr>
           <Skills></Skills>
           <Hr></Hr>
