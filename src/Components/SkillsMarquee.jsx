@@ -30,8 +30,9 @@ const SkillsMarquee = () => {
       <Marquee
         className="h-[200px] w-full overflow-hidden"
         direction="left"
-        scrollDelay={20}
+        scrollDelay={0}
         pauseOnHover
+        speed={130}
       >
         {image.map((img, i) => (
           <div
