@@ -36,7 +36,7 @@ const SkillsMarquee = () => {
         {image.map((img, i) => (
           <div
             key={i}
-            className="w-[100px] rounded-lg border border-gray-600 p-3 shadow-lg backdrop-blur-lg transition duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-gray-600 md:w-[150px]"
+            className="mx-3 w-[100px] rounded-lg border border-gray-600 p-3 shadow-lg backdrop-blur-lg transition duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-gray-600 md:w-[150px] lg:mx-4"
           >
             <img src={img} loading="lazy" alt="" className="w-full" />
           </div>
