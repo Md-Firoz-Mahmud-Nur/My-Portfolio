@@ -28,7 +28,7 @@ const SkillsMarquee = () => {
         My Skills
       </h2>
       <Marquee
-        className="h-[200px] w-full overflow-hidden"
+        className="h-[215px] w-full overflow-hidden"
         direction="left"
         scrollDelay={0}
         pauseOnHover
