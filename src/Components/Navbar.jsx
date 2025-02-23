@@ -102,7 +102,7 @@ const Navbar = () => {
   );
   return (
     <div className="sticky top-0 z-20 shadow-md backdrop-blur-lg">
-      <div className="container navbar mx-auto rounded via-transparent">
+      <div className="container navbar mx-auto rounded-sm via-transparent">
         <div className="navbar-start">
           <div className="dropdown">
             <div
@@ -129,7 +129,7 @@ const Navbar = () => {
             {isOpen && (
               <ul
                 tabIndex={0}
-                className="menu dropdown-content menu-sm z-[1] mt-3 w-52 rounded-box bg-base-100 p-2 shadow"
+                className="menu dropdown-content menu-sm z-1 mt-3 w-52 rounded-box bg-base-100 p-2 shadow-sm"
               >
                 {links}
               </ul>

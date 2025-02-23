@@ -6,7 +6,7 @@ const Header = () => {
     <div className="flex flex-col-reverse md:flex-row" id="home">
       <header
         id="header"
-        className="flex flex-grow flex-col items-center justify-center bg-opacity-50 p-10 text-center text-gray-800"
+        className="flex grow flex-col items-center justify-center bg-opacity-50 p-10 text-center text-gray-800"
       >
         <h1 className="mb-4 text-xl font-bold backdrop-blur-lg sm:text-4xl sm:font-semibold">
           Md. Firoz Mahmud Nur
