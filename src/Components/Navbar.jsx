@@ -102,11 +102,10 @@ const Navbar = () => {
   );
   return (
     <div className="sticky top-0 z-20 shadow-md backdrop-blur-lg">
-      <div className="container navbar mx-auto rounded-sm via-transparent">
+      <div className="navbar container mx-auto rounded-sm via-transparent">
         <div className="navbar-start">
           <div className="dropdown">
-            <div
-              tabIndex={0}
+            <button
               role="button"
               className="btn btn-ghost lg:hidden"
               onClick={toggleDropdown}
@@ -125,11 +124,11 @@ const Navbar = () => {
                   d="M4 6h16M4 12h8m-8 6h16"
                 />
               </svg>
-            </div>
+            </button>
             {isOpen && (
               <ul
                 tabIndex={0}
-                className="menu dropdown-content menu-sm z-1 mt-3 w-52 rounded-box bg-base-100 p-2 shadow-sm"
+                className="menu dropdown-content menu-sm rounded-box bg-base-100 z-1 mt-3 w-52 p-2 shadow-sm"
               >
                 {links}
               </ul>
