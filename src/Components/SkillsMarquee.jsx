@@ -33,6 +33,9 @@ const SkillsMarquee = () => {
         scrollDelay={0}
         pauseOnHover
         speed={130}
+        gradient={true}
+        gradientColor="rgba(255,255,255,1)"
+        gradientWidth={100}
       >
         {image.map((img, i) => (
           <div
