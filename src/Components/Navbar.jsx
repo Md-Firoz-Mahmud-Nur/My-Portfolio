@@ -28,7 +28,7 @@ const Navbar = () => {
                   closeDropdown();
                 }}
               >
-                {section}
+                {section.charAt(0).toUpperCase() + section.slice(1)}
               </a>
             </li>
           )
