@@ -75,7 +75,7 @@ const Contact = () => {
             <div className="mb-3 w-full">
               <label
                 className="mb-[2px] block max-w-min font-medium backdrop-blur-lg"
-                htmlFor="exampleInput90"
+                htmlFor="name"
               >
                 Name
               </label>
@@ -83,7 +83,7 @@ const Contact = () => {
                 type="text"
                 name="name"
                 className="w-full rounded-md border px-2 py-2 outline-hidden backdrop-blur-lg"
-                id="exampleInput90"
+                id="name"
                 placeholder="Name"
                 required
               />
@@ -92,7 +92,7 @@ const Contact = () => {
             <div className="mb-3 w-full">
               <label
                 className="mb-[2px] block max-w-min font-medium backdrop-blur-lg"
-                htmlFor="exampleInput90"
+                htmlFor="email"
               >
                 Email
               </label>
@@ -100,7 +100,7 @@ const Contact = () => {
                 type="email"
                 name="email"
                 className="w-full rounded-md border px-2 py-2 outline-hidden backdrop-blur-lg"
-                id="exampleInput90"
+                id="email"
                 placeholder="Enter your email address"
                 required
               />
@@ -109,7 +109,7 @@ const Contact = () => {
             <div className="mb-3 w-full">
               <label
                 className="mb-[2px] block max-w-min font-medium backdrop-blur-lg"
-                htmlFor="exampleInput90"
+                htmlFor="message"
               >
                 Message
               </label>
