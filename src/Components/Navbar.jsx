@@ -12,7 +12,29 @@ const Navbar = () => {
   };
   const links = (
     <>
-      <li>
+      {["home", "skills", "projects", "education", "contact"].map(
+        (section) => (
+          console.log(section),
+          (
+            <li key={section}>
+              <a
+                href={`#${section}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.scrollTo({
+                    top: document.getElementById("home").offsetTop - 68,
+                    behavior: "smooth",
+                  });
+                  closeDropdown();
+                }}
+              >
+                {section}
+              </a>
+            </li>
+          )
+        ),
+      )}
+      {/* <li>
         <a
           href="#home"
           onClick={(e) => {
@@ -86,7 +108,7 @@ const Navbar = () => {
         >
           Contact
         </a>
-      </li>
+      </li> */}
       <li>
         <a
           href="/Resume of Md Firoz Mahmud Nur.pdf"
