@@ -82,7 +82,7 @@ const Contact = () => {
               <input
                 type="text"
                 name="name"
-                className="w-full rounded-md border px-2 py-2 outline-hidden"
+                className="w-full rounded-md border px-2 py-2 outline-hidden backdrop-blur-lg"
                 id="exampleInput90"
                 placeholder="Name"
                 required
@@ -99,7 +99,7 @@ const Contact = () => {
               <input
                 type="email"
                 name="email"
-                className="w-full rounded-md border px-2 py-2 outline-hidden"
+                className="w-full rounded-md border px-2 py-2 outline-hidden backdrop-blur-lg"
                 id="exampleInput90"
                 placeholder="Enter your email address"
                 required
@@ -114,7 +114,7 @@ const Contact = () => {
                 Message
               </label>
               <textarea
-                className="h-20 w-full rounded-[5px] border px-2 py-2 outline-hidden"
+                className="h-20 w-full rounded-[5px] border px-2 py-2 outline-hidden backdrop-blur-lg"
                 name="message"
                 id="message"
                 placeholder="Enter your thoughts"
