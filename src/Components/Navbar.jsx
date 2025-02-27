@@ -22,7 +22,7 @@ const Navbar = () => {
                 onClick={(e) => {
                   e.preventDefault();
                   window.scrollTo({
-                    top: document.getElementById(section).offsetTop - 68,
+                    top: document.getElementById(section).offsetTop - 145,
                     behavior: "smooth",
                   });
                   closeDropdown();
