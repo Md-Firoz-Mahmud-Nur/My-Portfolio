@@ -27,7 +27,7 @@ const Contact = () => {
               data-aos="zoom-in"
               data-aos-duration="500"
             />
-            <div className="space-y-4 px-4 backdrop-blur-lg lg:px-0">
+            <div className="max-w-min space-y-4 px-4 backdrop-blur-lg lg:px-0">
               <a
                 href="tel:+880 1797-626050"
                 className="flex items-center text-lg"
@@ -124,7 +124,7 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="mb-6 inline-block w-full rounded-sm bg-black px-6 py-2.5 text-lg font-medium uppercase leading-normal text-white hover:shadow-md"
+              className="mb-6 inline-block w-full rounded-sm bg-black px-6 py-2.5 text-lg leading-normal font-medium text-white uppercase hover:shadow-md"
             >
               Send
             </button>
