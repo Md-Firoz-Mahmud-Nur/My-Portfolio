@@ -74,7 +74,7 @@ const Contact = () => {
           <form action="https://getform.io/f/bxojjzpa" method="post">
             <div className="mb-3 w-full">
               <label
-                className="mb-[2px] block font-medium"
+                className="mb-[2px] block max-w-min font-medium backdrop-blur-lg"
                 htmlFor="exampleInput90"
               >
                 Name
@@ -91,7 +91,7 @@ const Contact = () => {
 
             <div className="mb-3 w-full">
               <label
-                className="mb-[2px] block font-medium"
+                className="mb-[2px] block max-w-min font-medium backdrop-blur-lg"
                 htmlFor="exampleInput90"
               >
                 Email
@@ -108,7 +108,7 @@ const Contact = () => {
 
             <div className="mb-3 w-full">
               <label
-                className="mb-[2px] block font-medium"
+                className="mb-[2px] block max-w-min font-medium backdrop-blur-lg"
                 htmlFor="exampleInput90"
               >
                 Message
