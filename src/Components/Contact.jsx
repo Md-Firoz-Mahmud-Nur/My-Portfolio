@@ -85,6 +85,7 @@ const Contact = () => {
                 className="w-full rounded-md border px-2 py-2 outline-hidden backdrop-blur-lg"
                 id="name"
                 placeholder="Name"
+                autoComplete="name"
                 required
               />
             </div>
@@ -102,6 +103,7 @@ const Contact = () => {
                 className="w-full rounded-md border px-2 py-2 outline-hidden backdrop-blur-lg"
                 id="email"
                 placeholder="Enter your email address"
+                autoComplete="email"
                 required
               />
             </div>
