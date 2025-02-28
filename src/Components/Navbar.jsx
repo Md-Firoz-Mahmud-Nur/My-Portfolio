@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
+const sections = ["home", "skills", "projects", "education", "contact"];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,42 +11,45 @@ const Navbar = () => {
   const closeDropdown = () => {
     setIsOpen(false);
   };
-  const links = (
-    <>
-      {["home", "skills", "projects", "education", "contact"].map(
-        (section) => (
-          console.log(section),
-          (
-            <li key={section}>
-              <a
-                href={`#${section}`}
-                onClick={(e) => {
-                  e.preventDefault();
-                  window.scrollTo({
-                    top: document.getElementById(section).offsetTop - 145,
-                    behavior: "smooth",
-                  });
-                  closeDropdown();
-                }}
-              >
-                {section.charAt(0).toUpperCase() + section.slice(1)}
-              </a>
-            </li>
-          )
-        ),
-      )}
-      <li>
-        <a
-          href="/Resume of Md Firoz Mahmud Nur.pdf"
-          download="/Resume of Md Firoz Mahmud Nur.pdf"
-          onClick={() => {
-            closeDropdown();
-          }}
-        >
-          Resume
-        </a>
-      </li>
-    </>
+  const links = useMemo(
+    () => (
+      <>
+        {sections.map(
+          (section) => (
+            console.log(section),
+            (
+              <li key={section}>
+                <a
+                  href={`#${section}`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    window.scrollTo({
+                      top: document.getElementById(section).offsetTop - 145,
+                      behavior: "smooth",
+                    });
+                    closeDropdown();
+                  }}
+                >
+                  {section.charAt(0).toUpperCase() + section.slice(1)}
+                </a>
+              </li>
+            )
+          ),
+        )}
+        <li>
+          <a
+            href="/Resume of Md Firoz Mahmud Nur.pdf"
+            download="/Resume of Md Firoz Mahmud Nur.pdf"
+            onClick={() => {
+              closeDropdown();
+            }}
+          >
+            Resume
+          </a>
+        </li>
+      </>
+    ),
+    [],
   );
   return (
     <div className="sticky top-0 z-20 shadow-md backdrop-blur-lg">
