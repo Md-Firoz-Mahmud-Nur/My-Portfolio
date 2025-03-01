@@ -14,28 +14,23 @@ const Navbar = () => {
   const links = useMemo(
     () => (
       <>
-        {sections.map(
-          (section) => (
-            console.log(section),
-            (
-              <li key={section}>
-                <a
-                  href={`#${section}`}
-                  onClick={(e) => {
-                    e.preventDefault();
-                    window.scrollTo({
-                      top: document.getElementById(section).offsetTop - 145,
-                      behavior: "smooth",
-                    });
-                    closeDropdown();
-                  }}
-                >
-                  {section.charAt(0).toUpperCase() + section.slice(1)}
-                </a>
-              </li>
-            )
-          ),
-        )}
+        {sections.map((section) => (
+          <li key={section}>
+            <a
+              href={`#${section}`}
+              onClick={(e) => {
+                e.preventDefault();
+                window.scrollTo({
+                  top: document.getElementById(section).offsetTop - 145,
+                  behavior: "smooth",
+                });
+                closeDropdown();
+              }}
+            >
+              {section.charAt(0).toUpperCase() + section.slice(1)}
+            </a>
+          </li>
+        ))}
         <li>
           <a
             href="/Resume of Md Firoz Mahmud Nur.pdf"
