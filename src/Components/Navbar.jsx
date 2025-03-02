@@ -1,8 +1,28 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 const sections = ["home", "skills", "projects", "education", "contact"];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
+  console.log(activeSection);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY + 145;
+
+      for (let i = sections.length - 1; i >= 0; i--) {
+        const section = sections[i];
+        const el = document.getElementById(section);
+        if (el && el.offsetTop <= scrollPosition) {
+          setActiveSection(section);
+          break;
+        }
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -18,6 +38,9 @@ const Navbar = () => {
           <li key={section}>
             <a
               href={`#${section}`}
+              className={
+                activeSection === section ? "text-primary font-bold" : ""
+              }
               onClick={(e) => {
                 e.preventDefault();
                 window.scrollTo({
