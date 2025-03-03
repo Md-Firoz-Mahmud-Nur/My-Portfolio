@@ -67,7 +67,7 @@ const Navbar = () => {
         </li>
       </>
     ),
-    [],
+    [activeSection],
   );
   return (
     <div className="sticky top-0 z-20 shadow-md backdrop-blur-lg">
