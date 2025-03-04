@@ -4,12 +4,17 @@ const sections = ["home", "skills", "projects", "education", "contact"];
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
-  console.log(activeSection);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY + 145;
+      const bottomThreshold =
+        document.body.scrollHeight - window.innerHeight - 50;
 
+      if (window.scrollY >= bottomThreshold) {
+        setActiveSection("contact");
+        return;
+      }
       for (let i = sections.length - 1; i >= 0; i--) {
         const section = sections[i];
         const el = document.getElementById(section);
