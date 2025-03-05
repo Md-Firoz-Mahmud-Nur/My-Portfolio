@@ -43,9 +43,11 @@ const Navbar = () => {
           <li key={section}>
             <a
               href={`#${section}`}
-              className={
-                activeSection === section ? "text-primary font-bold" : ""
-              }
+              className={`transition-all duration-300 ease-in-out ${
+                activeSection === section
+                  ? "text-primary border-primary border-b-2 font-bold"
+                  : "hover:text-primary"
+              }`}
               onClick={(e) => {
                 e.preventDefault();
                 window.scrollTo({
