@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
+import "./Navbar.css";
 const sections = ["home", "skills", "projects", "education", "contact"];
 
 const Navbar = () => {
