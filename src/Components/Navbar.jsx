@@ -62,7 +62,7 @@ const Navbar = () => {
             </a>
           </li>
         ))}
-        <li>
+        <li className="box">
           <a
             href="/Resume of Md Firoz Mahmud Nur.pdf"
             download="/Resume of Md Firoz Mahmud Nur.pdf"
