@@ -62,9 +62,8 @@ const Navbar = () => {
             </a>
           </li>
         ))}
-        <li className="before:content-[] after:content-[] before:animate relative items-center justify-center overflow-hidden rounded-full bg-transparent before:absolute before:h-[220%] before:w-full before:animate-[spin_3s_linear_infinite] before:bg-[linear-gradient(black,white,blue)] after:absolute after:inset-[2px] after:rounded-full after:bg-white">
+        <li className="before:content-[] after:content-[] before:animate relative items-center justify-center overflow-hidden rounded-full bg-transparent before:absolute before:h-[220%] before:w-full before:animate-[spin_3s_linear_infinite] before:bg-[linear-gradient(black,white,blue)] after:absolute after:inset-[2px] after:rounded-full after:bg-white [&>a]:z-10">
           <a
-            className="z-10"
             href="/Resume of Md Firoz Mahmud Nur.pdf"
             download="/Resume of Md Firoz Mahmud Nur.pdf"
             onClick={() => {
