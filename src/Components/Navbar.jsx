@@ -62,7 +62,7 @@ const Navbar = () => {
             </a>
           </li>
         ))}
-        <li className="before:content-[] after:content-[] before:animate relative max-w-min items-center justify-center overflow-hidden rounded-full bg-transparent before:absolute before:h-[240%] before:w-full before:animate-[spin_3s_linear_infinite] before:bg-[linear-gradient(black,white,blue)] after:absolute after:inset-[2px] after:rounded-full after:bg-white lg:items-center lg:justify-center lg:before:h-[220%] [&>a]:z-10">
+        <li className="before:content-[] after:content-[] before:animate relative max-w-min items-center justify-center overflow-hidden rounded-full bg-transparent before:absolute before:h-[240%] before:w-full before:animate-[spin_3s_linear_infinite] before:bg-[linear-gradient(black,white,blue)] after:absolute after:inset-[2px] after:rounded-full after:bg-white lg:items-center lg:justify-center lg:before:h-[220%] [&>a]:z-10 hover:after:shadow1122 shadow1122">
           <a
             href="/Resume of Md Firoz Mahmud Nur.pdf"
             download="/Resume of Md Firoz Mahmud Nur.pdf"
