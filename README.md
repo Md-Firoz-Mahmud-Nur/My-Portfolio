@@ -10,7 +10,7 @@ In TypeScript, `any`, `unknown`, and `never` are **special types** that help han
 - Disables type checking completely.
 - Use with caution, as it can lead to runtime errors.
 
-````ts
+```ts
 let data: any = "Hello";
 data = 42;
 data = true;
