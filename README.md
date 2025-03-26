@@ -1,4 +1,4 @@
-# TypeScript Blog: Exploring `any`, `unknown`, `never` and Type Combinations (Union & Intersection)
+# TypeScript Blog: Exploring `any`, `unknown`, `never` and Type Combinations (`Union` & `Intersection`)
 
 ## 01. Explain the difference between any, unknown, and never types in TypeScript
 
@@ -13,11 +13,10 @@ In TypeScript, `any`, `unknown`, and `never` are **special types** that help han
 ````ts
 let data: any = "Hello";
 data = 42;
-data = true;```
+data = true;
+```
 
-You can access any property on any, but there's no IntelliSense or error checking.
-
-````
+You can access any property on any, but there no IntelliSense or error checking.
 
 ### unknown
 
