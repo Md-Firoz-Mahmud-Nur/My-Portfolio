@@ -6,12 +6,12 @@ const Header = () => {
     <div className="flex flex-col-reverse md:flex-row" id="home">
       <header
         id="header"
-        className="flex grow flex-col items-center justify-center bg-opacity-50 p-10 text-center text-gray-800"
+        className="bg-opacity-50 flex grow flex-col items-center justify-center p-10 text-center text-gray-800"
       >
         <h1 className="mb-4 text-xl font-bold backdrop-blur-lg sm:text-4xl sm:font-semibold">
           Md. Firoz Mahmud Nur
         </h1>
-        <h2 className="mb-4 max-w-min text-nowrap text-lg backdrop-blur-lg sm:text-xl">
+        <h2 className="mb-4 max-w-min text-lg text-nowrap backdrop-blur-lg sm:text-xl">
           Front-End Web Developer
         </h2>
         <div className="mx-auto flex max-w-xl flex-col items-center justify-center">
@@ -59,12 +59,16 @@ const Header = () => {
         </div>
       </header>
       <div className="flex items-center justify-center p-10">
-        <img
-          className="h-56 min-w-[168px] border border-black object-cover object-bottom"
-          src="https://i.ibb.co/ZMzsPbm/Apply-Basic-Image.jpg"
-          alt="Md. Firoz Mahmud Nur - Web Developer"
-          loading="lazy"
-        />
+        <div className="relative">
+          <img
+            className="h-56 min-w-[168px] border border-black object-cover object-bottom"
+            src="https://i.ibb.co/ZMzsPbm/Apply-Basic-Image.jpg"
+            alt="Md. Firoz Mahmud Nur - Web Developer"
+            loading="lazy"
+          />
+          <div className="absolute top-0 size-4 translate-[-50%] translate-y-[-50%] border border-black bg-transparent backdrop-blur-lg"></div>
+          <div className="absolute top-0 right-0 size-4 translate-[50%] translate-y-[-50%] border border-black bg-transparent backdrop-blur-lg"></div>
+        </div>
       </div>
     </div>
   );
