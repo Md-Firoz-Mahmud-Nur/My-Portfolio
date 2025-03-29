@@ -61,6 +61,10 @@ const Header = () => {
       <div className="flex items-center justify-center p-10">
         <div className="relative">
           <img
+            style={{
+              clipPath:
+                "polygon(8px 0%, calc(100% - 8px) 0%, 100% 8px, 100% 100%, 0% 100%, 0% 8px)",
+            }}
             className="h-56 min-w-[168px] border border-black object-cover object-bottom"
             src="https://i.ibb.co/ZMzsPbm/Apply-Basic-Image.jpg"
             alt="Md. Firoz Mahmud Nur - Web Developer"
