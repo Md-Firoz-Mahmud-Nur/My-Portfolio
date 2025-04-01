@@ -1,4 +1,4 @@
-import { FaGithub, FaWhatsapp } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 
 const Header = () => {
@@ -28,6 +28,14 @@ const Header = () => {
             <br />
             Let&apos;s work together
             <div className="flex items-center justify-center gap-4 py-4">
+              <a
+                href="https://www.linkedin.com/in/md-firoz-mahmud-nur"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Linkedin"
+              >
+                <FaLinkedin className="size-8" />
+              </a>
               <a
                 href="https://wa.me/8801797626050?text=Hi%20Md.%20Firoz%20Mahmud%20Nur,%20I%20came%20across%20your%20portfolio%20website%20and%20would%20like%20to%20connect%20with%20you."
                 target="_blank"
