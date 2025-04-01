@@ -1,4 +1,4 @@
-import { FaPhoneSquareAlt, FaWhatsappSquare } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaPhoneSquareAlt, FaWhatsappSquare } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import { FaFacebook } from "react-icons/fa";
 import AOS from "aos";
@@ -23,7 +23,7 @@ const Contact = () => {
               src="https://i.ibb.co.com/TxhSx7r8/Apply-Basic-Image.png"
               alt="Md. Firoz Mahmud Nur - Web Developer"
               loading="lazy"
-              className="mx-auto size-[280px] rounded-full border-2 border-black object-cover object-top lg:mx-0 backdrop-blur-lg"
+              className="mx-auto size-[280px] rounded-full border-2 border-black object-cover object-top backdrop-blur-lg lg:mx-0"
               data-aos="zoom-in"
               data-aos-duration="500"
             />
@@ -47,6 +47,24 @@ const Contact = () => {
                 <span className="font-medium">+880 1797-626050</span>
               </a>
               <a
+                href="https://www.linkedin.com/in/md-firoz-mahmud-nur"
+                className="flex items-center text-lg"
+                data-aos="fade-up"
+                data-aos-duration="500"
+              >
+                <FaLinkedin className="mr-2 inline" />
+                <span className="font-medium">Md. Firoz Mahmud Nur</span>
+              </a>
+              <a
+                href="https://github.com/Md-Firoz-Mahmud-Nur"
+                className="flex items-center text-lg"
+                data-aos="fade-up"
+                data-aos-duration="500"
+              >
+                <FaGithub className="mr-2 inline" />
+                <span className="font-medium">Md-Firoz-Mahmud-Nur</span>
+              </a>
+              <a
                 href="mailto:firoznur5@gmail.com"
                 className="flex items-center text-lg"
                 data-aos="fade-up"
@@ -55,18 +73,18 @@ const Contact = () => {
                 <MdEmail className="mr-2 inline" />
                 <span className="font-medium">firoznur5@gmail.com</span>
               </a>
-              <div className="flex items-center gap-4">
-                <a
-                  href="https://www.facebook.com/firoz.nur"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-aos="fade-up"
-                  data-aos-duration="500"
-                >
-                  <FaFacebook className="mr-2 inline" />
-                  <span className="font-medium">Nur</span>
-                </a>
-              </div>
+              {/* <div className="flex items-center gap-4"> */}
+              <a
+                href="https://www.facebook.com/firoz.nur"
+                target="_blank"
+                rel="noopener noreferrer"
+                data-aos="fade-up"
+                data-aos-duration="500"
+              >
+                <FaFacebook className="mr-2 inline" />
+                <span className="font-medium">Nur</span>
+              </a>
+              {/* </div> */}
             </div>
           </div>
         </div>
