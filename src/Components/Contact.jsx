@@ -32,7 +32,7 @@ const Contact = () => {
               data-aos="zoom-in"
               data-aos-duration="500"
             />
-            <div className="max-w-min space-y-4 px-4 backdrop-blur-lg lg:px-0">
+            <div className="max-w-min space-y-4 px-4 text-nowrap backdrop-blur-lg lg:px-0">
               <a
                 href="tel:+880 1797-626050"
                 className="flex items-center text-lg"
@@ -82,7 +82,6 @@ const Contact = () => {
                 <MdEmail className="mr-2 inline" />
                 <span className="font-medium">firoznur5@gmail.com</span>
               </a>
-              {/* <div className="flex items-center gap-4"> */}
               <a
                 href="https://www.facebook.com/firoz.nur"
                 target="_blank"
@@ -93,7 +92,6 @@ const Contact = () => {
                 <FaFacebook className="mr-2 inline" />
                 <span className="font-medium">Nur</span>
               </a>
-              {/* </div> */}
             </div>
           </div>
         </div>
