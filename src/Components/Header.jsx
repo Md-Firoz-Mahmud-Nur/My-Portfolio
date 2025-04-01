@@ -65,8 +65,8 @@ const Header = () => {
               clipPath:
                 "polygon(8px 0%, calc(100% - 8px) 0%, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) calc(100% - 8px),calc(100% - 8px) 100%, 8px 100%, 8px calc(100% - 8px),0% calc(100% - 8px),0% 8px)",
             }}
-            className="h-56 min-w-[168px] border border-black object-cover object-bottom"
-            src="https://i.ibb.co/ZMzsPbm/Apply-Basic-Image.jpg"
+            className="h-56 min-w-[168px] border border-black object-cover object-bottom backdrop-blur-lg"
+            src="https://i.ibb.co.com/TxhSx7r8/Apply-Basic-Image.png"
             alt="Md. Firoz Mahmud Nur - Web Developer"
             loading="lazy"
           />
