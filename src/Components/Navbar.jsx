@@ -48,6 +48,7 @@ const Navbar = () => {
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", isDark);
+    document.body.classList.toggle("dark", isDark === "dark");
     localStorage.setItem("theme", isDark);
   }, [isDark]);
 
@@ -63,6 +64,7 @@ const Navbar = () => {
               onChange={toggleTheme}
               className="theme-controller"
               value="synthwave"
+              checked={isDark === "dark"}
             />
 
             <svg
@@ -117,7 +119,7 @@ const Navbar = () => {
         </li>
       </>
     ),
-    [activeSection],
+    [activeSection, isDark],
   );
   return (
     <div className="sticky top-0 z-20 shadow-md backdrop-blur-lg">
