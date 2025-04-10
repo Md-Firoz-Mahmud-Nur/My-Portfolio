@@ -38,11 +38,18 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
-  const [isDark, setIsDark] = useState(null);
+  const [isDark, setIsDark] = useState(
+    () => localStorage.getItem("theme") || "light",
+  );
 
   const toggleTheme = () => {
     setIsDark((prev) => (prev === "dark" ? "light" : "dark"));
   };
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", isDark);
+    localStorage.setItem("theme", isDark);
+  }, [isDark]);
 
   console.log(isDark);
 
