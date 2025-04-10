@@ -1,7 +1,8 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
 import ParticlesConfig from "./ParticlesConfig";
+import { Context } from "../Context/Context";
 
 const ParticlesAnimation = () => {
   const [init, setInit] = useState(false);
@@ -15,7 +16,7 @@ const ParticlesAnimation = () => {
   }, []);
 
   const particlesLoaded = () => {};
-  const isDark = "dark";
+  const { isDark } = useContext(Context);
   return (
     <div>
       {init && (

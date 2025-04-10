@@ -1,5 +1,6 @@
-import { useEffect, useMemo, useState } from "react";
+import { useContext, useEffect, useMemo, useState } from "react";
 import "./Navbar.css";
+import { Context } from "../Context/Context";
 const sections = ["home", "skills", "projects", "education", "contact"];
 
 const Navbar = () => {
@@ -38,19 +39,7 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
-  const [isDark, setIsDark] = useState(
-    () => localStorage.getItem("theme") || "light",
-  );
-
-  const toggleTheme = () => {
-    setIsDark((prev) => (prev === "dark" ? "light" : "dark"));
-  };
-
-  useEffect(() => {
-    document.documentElement.setAttribute("data-theme", isDark);
-    document.body.classList.toggle("dark", isDark === "dark");
-    localStorage.setItem("theme", isDark);
-  }, [isDark]);
+  const { isDark, toggleTheme } = useContext(Context);
 
   const links = useMemo(
     () => (
