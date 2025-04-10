@@ -15,7 +15,7 @@ const ParticlesConfig = {
     enable: true,
     zIndex: -10,
   },
-  // background: { color: "#fff" },
+  background: { color: "#fff" },
   detectRetina: true,
   fpsLimit: 60,
   interactivity: {

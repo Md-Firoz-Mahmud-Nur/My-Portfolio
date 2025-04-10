@@ -37,12 +37,3 @@
     transform: rotate(360deg);
   }
 } */
-
-.shadow1122:hover {
-  background-color: "#f00";
-  box-shadow: "0 0 5px  #0f0";
-  /* box-shadow:
-  rgba(240, 46, 170, 0.4) 5px 5px ,
-  rgba(240, 46, 170, 0.3) 10px 10px,
-  rgba(240, 46, 170, 0.2) 15px 15px; */
-}
