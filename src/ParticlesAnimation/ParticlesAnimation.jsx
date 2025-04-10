@@ -15,13 +15,14 @@ const ParticlesAnimation = () => {
   }, []);
 
   const particlesLoaded = () => {};
+  const isDark = "dark";
   return (
     <div>
       {init && (
         <Particles
           id="tsparticles"
           particlesLoaded={particlesLoaded}
-          options={ParticlesConfig}
+          options={ParticlesConfig(isDark)}
         />
       )}
     </div>

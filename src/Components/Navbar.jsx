@@ -52,8 +52,6 @@ const Navbar = () => {
     localStorage.setItem("theme", isDark);
   }, [isDark]);
 
-  console.log(isDark);
-
   const links = useMemo(
     () => (
       <>
