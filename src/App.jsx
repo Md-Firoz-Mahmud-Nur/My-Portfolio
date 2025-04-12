@@ -24,15 +24,6 @@ export default function App() {
 
   return (
     <>
-      <div className="dark">
-        <header className="bg-testred text-gray-800 dark:text-white">
-          Test Dark Mode
-        </header>
-      </div>
-      <div className="bg-white text-black dark:bg-black dark:text-white">
-        Dark mode supported!
-      </div>
-
       <SmoothScroll>
         <Navbar></Navbar>
         <div
