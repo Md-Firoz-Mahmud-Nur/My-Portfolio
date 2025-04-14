@@ -71,17 +71,17 @@ const Header = () => {
           <img
             style={{
               clipPath:
-                "polygon(8px 0%, calc(100% - 8px) 0%, 100% 8px, 100% calc(100% - 8px), calc(100% - 8px) calc(100% - 8px),calc(100% - 8px) 100%, 8px 100%, 8px calc(100% - 8px),0% calc(100% - 8px),0% 8px)",
+                "polygon(8px 0%, calc(100% - 8px) 0%, calc(100% + 1px) 8px, calc(100% + 1px) calc(100% - 8px), calc(100% - 8px) calc(100% - 8px),calc(100% - 8px) 100%, 8px 100%, 8px calc(100% - 8px),0% calc(100% - 8px),0% 8px)",
             }}
-            className="h-56 min-w-[168px] border border-black object-cover object-bottom backdrop-blur-lg"
+            className="h-56 min-w-[168px] border object-cover object-bottom backdrop-blur-lg"
             src="https://i.ibb.co.com/TxhSx7r8/Apply-Basic-Image.png"
             alt="Md. Firoz Mahmud Nur - Web Developer"
             loading="lazy"
           />
-          <div className="absolute top-0 size-4 translate-[-50%] translate-y-[-50%] border border-black bg-transparent backdrop-blur-lg"></div>
-          <div className="absolute top-0 right-0 size-4 translate-[50%] translate-y-[-50%] border border-black bg-transparent backdrop-blur-lg"></div>
-          <div className="absolute bottom-0 size-4 translate-[-50%] translate-y-[50%] border border-black bg-transparent backdrop-blur-lg"></div>
-          <div className="absolute right-0 bottom-0 size-4 translate-[50%] translate-y-[50%] border border-black bg-transparent backdrop-blur-lg"></div>
+          <div className="absolute top-0 size-4 translate-[-50%] translate-y-[-50%] border  bg-transparent backdrop-blur-lg"></div>
+          <div className="absolute top-0 right-0 size-4 translate-[50%] translate-y-[-50%] border  bg-transparent backdrop-blur-lg"></div>
+          <div className="absolute bottom-0 size-4 translate-[-50%] translate-y-[50%] border  bg-transparent backdrop-blur-lg"></div>
+          <div className="absolute right-0 bottom-0 size-4 translate-[50%] translate-y-[50%] border  bg-transparent backdrop-blur-lg"></div>
         </div>
       </div>
     </div>
