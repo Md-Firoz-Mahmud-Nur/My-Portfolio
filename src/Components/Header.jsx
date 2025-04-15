@@ -59,7 +59,7 @@ const Header = () => {
             <a
               href="/Resume of Md Firoz Mahmud Nur.pdf"
               download="/Resume of Md Firoz Mahmud Nur.pdf"
-              className="btn btn-outline text-lg"
+              className="btn btn-outline border-base-content text-lg hover:bg-gray-100 dark:hover:bg-gray-800"
             >
               Download Resume
             </a>
@@ -78,10 +78,10 @@ const Header = () => {
             alt="Md. Firoz Mahmud Nur - Web Developer"
             loading="lazy"
           />
-          <div className="absolute top-0 size-4 translate-[-50%] translate-y-[-50%] border  bg-transparent backdrop-blur-lg"></div>
-          <div className="absolute top-0 right-0 size-4 translate-[50%] translate-y-[-50%] border  bg-transparent backdrop-blur-lg"></div>
-          <div className="absolute bottom-0 size-4 translate-[-50%] translate-y-[50%] border  bg-transparent backdrop-blur-lg"></div>
-          <div className="absolute right-0 bottom-0 size-4 translate-[50%] translate-y-[50%] border  bg-transparent backdrop-blur-lg"></div>
+          <div className="absolute top-0 size-4 translate-[-50%] translate-y-[-50%] border bg-transparent backdrop-blur-lg"></div>
+          <div className="absolute top-0 right-0 size-4 translate-[50%] translate-y-[-50%] border bg-transparent backdrop-blur-lg"></div>
+          <div className="absolute bottom-0 size-4 translate-[-50%] translate-y-[50%] border bg-transparent backdrop-blur-lg"></div>
+          <div className="absolute right-0 bottom-0 size-4 translate-[50%] translate-y-[50%] border bg-transparent backdrop-blur-lg"></div>
         </div>
       </div>
     </div>
