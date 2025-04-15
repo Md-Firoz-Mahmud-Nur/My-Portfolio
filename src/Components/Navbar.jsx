@@ -50,7 +50,6 @@ const Navbar = () => {
               type="checkbox"
               onChange={toggleTheme}
               className="theme-controller"
-              value="synthwave"
               checked={isDark === "dark"}
             />
 
@@ -109,7 +108,7 @@ const Navbar = () => {
     [activeSection, isDark, toggleTheme],
   );
   return (
-    <div className="sticky top-0 z-20 shadow-md backdrop-blur-lg">
+    <div className="sticky top-0 z-20 shadow-md dark:shadow-base-100 dark:shadow-lg backdrop-blur-lg">
       <div className="navbar container mx-auto rounded-sm via-transparent">
         <div className="navbar-start">
           <div className="dropdown">
