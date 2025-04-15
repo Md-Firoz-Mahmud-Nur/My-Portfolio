@@ -4,8 +4,11 @@ import PropTypes from "prop-types";
 export const Context = createContext();
 
 const Provider = ({ children }) => {
-  const [isDark, setIsDark] = useState(
-    () => localStorage.getItem("theme") || "light",
+  const [isDark, setIsDark] = useState(() =>
+    localStorage.getItem("theme") ||
+    window.matchMedia("(prefers-color-scheme: dark)").matches
+      ? "dark"
+      : "light",
   );
 
   useEffect(() => {
