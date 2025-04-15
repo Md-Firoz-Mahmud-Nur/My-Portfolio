@@ -1,6 +1,6 @@
 const Hr = () => {
   return (
-    <div className="my-20 ml-4 mr-4 border-t-2 border-dashed border-black md:ml-0 md:mr-0"></div>
+    <div className="my-20 mr-4 ml-4 border-t-2 border-dashed md:mr-0 md:ml-0"></div>
   );
 };
 
