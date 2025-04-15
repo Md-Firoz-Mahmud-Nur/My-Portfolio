@@ -10,8 +10,7 @@ const Provider = ({ children }) => {
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", isDark);
-    document.documentElement.classList.toggle("dark");
-    document.body.classList.toggle("dark", isDark === "dark");
+    document.documentElement.classList.toggle("dark", isDark === "dark");
     localStorage.setItem("theme", isDark);
   }, [isDark]);
 
