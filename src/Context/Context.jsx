@@ -4,12 +4,13 @@ import PropTypes from "prop-types";
 export const Context = createContext();
 
 const Provider = ({ children }) => {
-  const [isDark, setIsDark] = useState(() =>
-    localStorage.getItem("theme") ||
-    window.matchMedia("(prefers-color-scheme: dark)").matches
+  const [isDark, setIsDark] = useState(() => {
+    const stored = localStorage.getItem("theme");
+    if (stored) return stored;
+    return window.matchMedia("(prefers-color-scheme: dark)").matches
       ? "dark"
-      : "light",
-  );
+      : "light";
+  });
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", isDark);
