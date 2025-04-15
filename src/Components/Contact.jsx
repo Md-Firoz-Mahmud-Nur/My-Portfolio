@@ -28,7 +28,7 @@ const Contact = () => {
               src="https://i.ibb.co.com/TxhSx7r8/Apply-Basic-Image.png"
               alt="Md. Firoz Mahmud Nur - Web Developer"
               loading="lazy"
-              className="mx-auto size-[280px] rounded-full border-2 border-black object-cover object-top backdrop-blur-lg lg:mx-0"
+              className="mx-auto size-[280px] rounded-full border-2 object-cover object-top backdrop-blur-lg lg:mx-0"
               data-aos="zoom-in"
               data-aos-duration="500"
             />
@@ -95,7 +95,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-        <div className="w-full px-4 text-black lg:px-0">
+        <div className="w-full px-4 lg:px-0">
           <form action="https://getform.io/f/bxojjzpa" method="post">
             <div className="mb-3 w-full">
               <label
@@ -151,7 +151,7 @@ const Contact = () => {
 
             <button
               type="submit"
-              className="mb-6 inline-block w-full rounded-sm bg-black px-6 py-2.5 text-lg leading-normal font-medium text-white uppercase hover:shadow-md"
+              className="mb-6 inline-block w-full rounded-sm border  backdrop-blur-lg px-6 py-2.5 text-lg leading-normal font-medium  uppercase hover:shadow-md"
             >
               Send
             </button>
