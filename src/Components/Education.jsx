@@ -5,7 +5,7 @@ AOS.init();
 const Education = () => {
   return (
     <div className="w-full" id="education">
-      <h2 className="mx-auto mb-12 max-w-max pb-2 text-center text-3xl font-bold tracking-tight md:mb-16 md:text-4xl">
+      <h2 className="mx-auto mb-12 max-w-max pb-2 text-center text-3xl font-bold tracking-tight backdrop-blur-lg md:mb-16 md:text-4xl">
         Education
       </h2>
 

@@ -14,7 +14,7 @@ const Contact = () => {
   return (
     <div id="contact" className="my-12 md:my-16 lg:my-24">
       <h2
-        className="mx-auto mb-12 max-w-max pb-2 text-center text-3xl font-bold tracking-tight md:mb-16 md:text-4xl"
+        className="mx-auto mb-12 max-w-max pb-2 text-center text-3xl font-bold tracking-tight backdrop-blur-lg md:mb-16 md:text-4xl"
         data-aos="fade-down"
         data-aos-duration="500"
       >

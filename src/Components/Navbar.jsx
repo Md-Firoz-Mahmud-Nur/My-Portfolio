@@ -81,6 +81,7 @@ const Navbar = () => {
           <label className="swap swap-rotate py-0">
             <input
               type="checkbox"
+              name="theme"
               onChange={toggleTheme}
               className="theme-controller"
               checked={isDark === "dark"}
