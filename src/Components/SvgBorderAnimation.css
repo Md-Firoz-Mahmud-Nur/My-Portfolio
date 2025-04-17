@@ -1,0 +1,62 @@
+.Button {
+  /* background: none; */
+  /* padding: 0; */
+  /* margin: 50px auto; */
+  /* border: none; */
+  /* display: block; */
+  /* backface-visibility: hidden; */
+  /* width: 186.28px; */
+  /* height: 40px; */
+  position: relative;
+  /* color: #1b1718; */
+  font-size: 18px;
+  /* transition:
+    transform 300ms,
+    color 300ms; */
+  cursor: pointer;
+}
+
+.Button-svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* Keyframe values with $length = 672.1px */
+:root {
+  /* --full: 403.9%; */
+  --full: 887px;
+}
+
+.Button-line--outer {
+  /* stroke-dasharray: 336.05px 336.05px; */
+  stroke-dasharray: calc(var(--full) / 2);
+  /* stroke-dasharray: var(--full); */
+  stroke-dashoffset: 0;
+  animation: outer-dashoffset infinite linear 5s;
+}
+
+@keyframes outer-dashoffset {
+  0% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: calc(var(--full) / 2);
+  }
+  /* 50% {
+    stroke-dasharray: 224.03px 448.07px;
+  } */
+  100% {
+    stroke-dashoffset: var(--full);
+    stroke-dasharray: calc(var(--full) / 2);
+  }
+}
+
+.Button-content {
+  width: 186.281px;
+  /* width: 100%; */
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

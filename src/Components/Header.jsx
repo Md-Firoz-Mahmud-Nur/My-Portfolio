@@ -1,5 +1,6 @@
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
+import Test from "./SvgBorderAnimation";
 
 const Header = () => {
   return (
@@ -56,13 +57,15 @@ const Header = () => {
                 <SiGmail className="size-8" />
               </a>
             </div>
-            <a
+            {/* <a
               href="/Resume of Md Firoz Mahmud Nur.pdf"
               download="/Resume of Md Firoz Mahmud Nur.pdf"
               className="btn btn-outline border-base-content text-lg hover:bg-gray-100 dark:hover:bg-gray-800"
             >
               Download Resume
             </a>
+            <br /> */}
+            <Test></Test>
           </div>
         </div>
       </header>
