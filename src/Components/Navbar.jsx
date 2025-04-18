@@ -4,6 +4,7 @@ import { Context } from "../Context/Context";
 const sections = ["home", "skills", "projects", "education", "contact"];
 
 const Navbar = () => {
+  const { isDark, toggleTheme } = useContext(Context);
   const [isOpen, setIsOpen] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
 
@@ -38,8 +39,6 @@ const Navbar = () => {
   const closeDropdown = () => {
     setIsOpen(false);
   };
-
-  const { isDark, toggleTheme } = useContext(Context);
 
   const links = useMemo(
     () => (

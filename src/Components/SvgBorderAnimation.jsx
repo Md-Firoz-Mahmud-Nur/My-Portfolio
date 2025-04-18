@@ -1,13 +1,17 @@
+import { useContext } from "react";
+import { Context } from "../Context/Context";
 import "./SvgBorderAnimation.css";
 
 const SvgBorderAnimation = () => {
+  const { isDark } = useContext(Context);
+
   return (
     <button className="Button mt-1">
       <svg className="Button-svg" width="200" height="50" viewBox="0 0 300 80">
         <rect
           className="Button-line--outer"
           strokeWidth="2"
-          stroke="#fff"
+          stroke={isDark === "dark" ? "#fff" : "#000"}
           strokeLinecap="round"
           fill="none"
           x="-35"
