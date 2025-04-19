@@ -10,7 +10,7 @@ const SvgBorderAnimation = () => {
       <svg className="Button-svg" width="200" height="50" viewBox="0 0 300 80">
         <rect
           className="Button-line--outer"
-          strokeWidth="2"
+          strokeWidth="3"
           stroke={isDark === "dark" ? "#fff" : "#000"}
           strokeLinecap="round"
           fill="none"
