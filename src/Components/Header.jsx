@@ -13,16 +13,21 @@ const Header = () => {
           Md. Firoz Mahmud Nur
         </h1>
         <h2 className="mb-4 max-w-min text-lg text-nowrap backdrop-blur-lg sm:text-xl">
-          Front-End Web Developer
+          Full-Stack Web Developer
         </h2>
         <div className="mx-auto flex max-w-xl flex-col items-center justify-center">
-          <div className="backdrop-blur-lg">
-            I&apos;m a passionate and dedicated front-end developer with a keen
-            eye for design and a strong understanding of user experience. I am
-            currently looking for opportunities to work on challenging projects
-            and contribute to the growth of the industry. Feel free to reach out
-            if you&apos;re interested in collaborating on a project or just want
-            to know more about me.
+          <div className="flex flex-col gap-4 backdrop-blur-lg">
+            <p>
+              Hi, I&apos;m a passionate and dedicated full-stack web developer
+              with a keen eye for design and a strong understanding of user
+              experience.
+            </p>
+            <p>
+              <strong>Nur</strong> is currently looking for opportunities to
+              work on challenging projects and contribute to the growth of the
+              industry. Feel free to reach out if you&apos;re interested in
+              collaborating on a project or just want to know more about me.
+            </p>
           </div>
           <div className="text-xl font-semibold backdrop-blur-lg">
             <br />
