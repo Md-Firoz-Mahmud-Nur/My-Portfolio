@@ -8,6 +8,10 @@ import mongo from "../assets/mongo.png";
 import node from "../assets/node.png";
 import express from "../assets/express.png";
 import firebase from "../assets/firebase.png";
+import nextJS from "../assets/nextJS.png";
+import redux from "../assets/redux.png";
+import typescript from "../assets/typescript.png";
+import postgresql from "../assets/postgresql.png";
 import { useContext } from "react";
 import { Context } from "../Context/Context";
 
@@ -22,6 +26,10 @@ const SkillsMarquee = () => {
     node,
     express,
     firebase,
+    nextJS,
+    redux,
+    typescript,
+    postgresql
   ];
 
   const { isDark } = useContext(Context);
