@@ -1,4 +1,4 @@
-import { useContext, useEffect, useMemo, useState } from "react";
+import { useContext, useMemo, useState } from "react";
 import "./Navbar.css";
 import { Context } from "../Context/Context";
 const sections = ["home", "skills", "projects", "education", "contact"];
@@ -6,31 +6,31 @@ const sections = ["home", "skills", "projects", "education", "contact"];
 const Navbar = () => {
   const { isDark, toggleTheme } = useContext(Context);
   const [isOpen, setIsOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("home");
+  // const [activeSection, setActiveSection] = useState("home");
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY + 145;
-      const bottomThreshold =
-        document.body.scrollHeight - window.innerHeight - 50;
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     const scrollPosition = window.scrollY + 145;
+  //     const bottomThreshold =
+  //       document.body.scrollHeight - window.innerHeight - 50;
 
-      if (window.scrollY >= bottomThreshold) {
-        setActiveSection("contact");
-        return;
-      }
-      for (let i = sections.length - 1; i >= 0; i--) {
-        const section = sections[i];
-        const el = document.getElementById(section);
-        if (el && el.offsetTop <= scrollPosition) {
-          setActiveSection(section);
-          break;
-        }
-      }
-    };
+  //     if (window.scrollY >= bottomThreshold) {
+  //       setActiveSection("contact");
+  //       return;
+  //     }
+  //     for (let i = sections.length - 1; i >= 0; i--) {
+  //       const section = sections[i];
+  //       const el = document.getElementById(section);
+  //       if (el && el.offsetTop <= scrollPosition) {
+  //         setActiveSection(section);
+  //         break;
+  //       }
+  //     }
+  //   };
 
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
 
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
@@ -47,11 +47,12 @@ const Navbar = () => {
           <li key={section}>
             <a
               href={`#${section}`}
-              className={`transition-all duration-300 ease-in-out ${
-                activeSection === section
-                  ? "text-primary border-primary border-b-2 font-bold"
-                  : "hover:text-primary"
-              }`}
+              className={`hover:text-primary transition-all duration-300 ease-in-out`}
+              // className={`transition-all duration-300 ease-in-out ${
+              //   activeSection === section
+              //     ? "text-primary border-primary border-b-2 font-bold"
+              //     : "hover:text-primary"
+              // }`}
               onClick={(e) => {
                 e.preventDefault();
                 window.scrollTo({
@@ -105,7 +106,7 @@ const Navbar = () => {
         </li>
       </>
     ),
-    [activeSection, isDark, toggleTheme],
+    [isDark, toggleTheme],
   );
   return (
     <div className="dark:shadow-base-100 sticky top-0 z-20 shadow-md backdrop-blur-lg dark:shadow-lg">
