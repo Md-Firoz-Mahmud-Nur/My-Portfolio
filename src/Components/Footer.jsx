@@ -1,4 +1,32 @@
+import { useMemo } from "react";
+import { sections } from "./Navbar";
+
 const Footer = () => {
+  const links = useMemo(
+    () => (
+      <>
+        {sections.map((section) => (
+          <div key={section}>
+            <a
+              href={`#${section}`}
+              className={`hover:text-primary transition-all duration-300 ease-in-out`}
+              onClick={(e) => {
+                e.preventDefault();
+                window.scrollTo({
+                  top: document.getElementById(section).offsetTop - 145,
+                  behavior: "smooth",
+                });
+              }}
+            >
+              {section.charAt(0).toUpperCase() + section.slice(1)}
+            </a>
+          </div>
+        ))}
+      </>
+    ),
+    [],
+  );
+
   return (
     <div className="shadow-[0_-4px_0px_-1px_rgba(0,0,0,0.1),0_-2px_0px_-2px_rgba(0,0,0,0.1)] backdrop-blur-lg">
       <div className="container mx-auto">
@@ -15,21 +43,7 @@ const Footer = () => {
           </aside>
           <nav className="backdrop-blur-lg">
             <h6 className="footer-title">Quick Links</h6>
-            <a href="#home" className="link link-hover">
-              Home
-            </a>
-            <a href="#skills" className="link link-hover">
-              Skills
-            </a>
-            <a href="#projects" className="link link-hover">
-              Projects
-            </a>
-            <a href="#education" className="link link-hover">
-              Education
-            </a>
-            <a href="#contact" className="link link-hover">
-              Contact
-            </a>
+            {links}
             <a href="/resume" className="link link-hover">
               Resume
             </a>
