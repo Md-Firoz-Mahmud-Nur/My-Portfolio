@@ -25,7 +25,7 @@ export default function App() {
   return (
     <>
       <SmoothScroll>
-        <Navbar></Navbar>
+        {/* <Navbar></Navbar> */}
         <div
           className="container mx-auto"
           style={{
@@ -42,7 +42,7 @@ export default function App() {
           <Hr></Hr>
           <Contact></Contact>
         </div>
-        <Footer></Footer>
+        {/* <Footer></Footer> */}
       </SmoothScroll>
     </>
   );
