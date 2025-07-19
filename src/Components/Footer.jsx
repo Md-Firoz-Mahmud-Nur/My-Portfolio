@@ -44,7 +44,7 @@ const Footer = () => {
             </p>
           </aside>
           <div className="col-span-2 grid w-full grid-cols-2 gap-8">
-            <nav className="backdrop-blur-lg">
+            <nav>
               <h6 className="footer-title">Quick Links</h6>
               {links}
               <a
@@ -55,7 +55,7 @@ const Footer = () => {
                 Resume
               </a>
             </nav>
-            <nav className="backdrop-blur-lg">
+            <nav>
               <h6 className="footer-title">Connect</h6>
               <div className="flex flex-col items-start justify-center gap-2">
                 <a
