@@ -1,11 +1,11 @@
 const Footer = () => {
   return (
-    <div className="border-t shadow-md shadow-[rgba(0,0,15,1)_0px_-8px_20px_-10px]">
+    <div className="shadow-[0_-4px_0px_-1px_rgba(0,0,0,0.1),0_-2px_0px_-2px_rgba(0,0,0,0.1)] backdrop-blur-lg">
       <div className="container mx-auto">
-        <footer className="footer sm:footer-horizontal container mx-auto py-10">
+        <footer className="footer sm:footer-horizontal container mx-auto pt-10 pb-6">
           <aside>
             <h2 className="text-xl font-semibold">Md. Firoz Mahmud Nur</h2>
-            <p className="mt-2">
+            <p className="mt-2 text-base">
               Full-Stack Web Developer
               <p className="pt-2">
                 Passionate about building web applications with modern
@@ -55,7 +55,8 @@ const Footer = () => {
             </a>
           </nav>
         </footer>
-        <div className="border-t border-gray-600 p-4 text-center">
+        <div className="mr-4 ml-4 border-t-1 border-gray-400 md:mr-0 md:ml-0"></div>
+        <div className="pt-6 pb-10 text-center">
           <p>
             &copy; {new Date().getFullYear()} Md. Firoz Mahmud Nur. All rights
             reserved.
