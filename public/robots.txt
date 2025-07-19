@@ -1,4 +1,6 @@
 User-agent: *
-Disallow: /admin/
+Disallow:
 Allow: /
+
 Sitemap: https://md-firoz-mahmud-nur.netlify.app/sitemap.xml
+Sitemap: https://nurweb.dev/sitemap.xml
