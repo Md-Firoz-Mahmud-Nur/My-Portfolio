@@ -1,7 +1,7 @@
 import { useContext, useMemo, useState } from "react";
 import "./Navbar.css";
 import { Context } from "../Context/Context";
-export const sections = ["home", "skills", "projects", "education", "contact"];
+const sections = ["home", "skills", "projects", "education", "contact"];
 
 const Navbar = () => {
   const { isDark, toggleTheme } = useContext(Context);
