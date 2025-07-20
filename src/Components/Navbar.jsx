@@ -44,10 +44,10 @@ const Navbar = () => {
     () => (
       <>
         {sections.map((section) => (
-          <li className="py-0.5" key={section}>
+          <li key={section}>
             <a
               href={`#${section}`}
-              className={`hover:text-primary py-0.5 transition-all duration-300 ease-in-out`}
+              className={`hover:text-primary transition-all duration-300 ease-in-out`}
               // className={`transition-all duration-300 ease-in-out ${
               //   activeSection === section
               //     ? "text-primary border-primary border-b-2 font-bold"
@@ -78,11 +78,11 @@ const Navbar = () => {
           </a>
         </li>
         <li>
-          <label className="swap swap-rotate w-min px-2.5 py-1">
+          <label className="swap swap-rotate w-min px-2.5 py-1 lg:py-0">
             <input
               type="checkbox"
               name="theme"
-              label="theme"
+              aria-label="Toggle theme"
               onChange={toggleTheme}
               className="theme-controller"
               checked={isDark === "dark"}

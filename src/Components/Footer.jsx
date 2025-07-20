@@ -44,8 +44,8 @@ const Footer = () => {
             </div>
           </aside>
           <div className="col-span-2 grid w-full grid-cols-2 gap-8">
-            <nav>
-              <h6 className="footer-title">Quick Links</h6>
+            <nav className="menu space-y-2">
+              <h3 className="footer-title">Quick Links</h3>
               {links}
               <a
                 href="/Resume of Md Firoz Mahmud Nur.pdf"
@@ -56,7 +56,7 @@ const Footer = () => {
               </a>
             </nav>
             <nav>
-              <h6 className="footer-title">Connect</h6>
+              <h3 className="footer-title">Connect</h3>
               <div className="flex flex-col items-start justify-center gap-2">
                 <a
                   href="https://www.linkedin.com/in/md-firoz-mahmud-nur"
