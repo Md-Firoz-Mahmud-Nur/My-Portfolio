@@ -44,10 +44,10 @@ const Navbar = () => {
     () => (
       <>
         {sections.map((section) => (
-          <li key={section}>
+          <li className="py-0.5" key={section}>
             <a
               href={`#${section}`}
-              className={`hover:text-primary transition-all duration-300 ease-in-out`}
+              className={`hover:text-primary py-0.5 transition-all duration-300 ease-in-out`}
               // className={`transition-all duration-300 ease-in-out ${
               //   activeSection === section
               //     ? "text-primary border-primary border-b-2 font-bold"
@@ -82,6 +82,7 @@ const Navbar = () => {
             <input
               type="checkbox"
               name="theme"
+              label="theme"
               onChange={toggleTheme}
               className="theme-controller"
               checked={isDark === "dark"}
