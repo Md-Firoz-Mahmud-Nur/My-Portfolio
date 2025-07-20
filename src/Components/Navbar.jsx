@@ -117,6 +117,7 @@ const Navbar = () => {
             <button
               role="button"
               className="btn btn-ghost lg:hidden"
+              aria-label="Toggle dropdown"
               onClick={toggleDropdown}
             >
               <svg
