@@ -26,7 +26,7 @@ const Contact = () => {
           <div className="flex flex-col justify-center gap-6 md:gap-8 lg:flex-row lg:items-center">
             <img
               src="https://i.ibb.co.com/TxhSx7r8/Apply-Basic-Image.png"
-              alt="Md. Firoz Mahmud Nur - Web Developer"
+              alt="Md. Firoz Mahmud Nur - Full-Stack Web Developer"
               loading="lazy"
               className="mx-auto size-[280px] rounded-full border-2 object-cover object-top backdrop-blur-lg lg:mx-0"
               data-aos="zoom-in"

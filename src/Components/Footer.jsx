@@ -35,13 +35,13 @@ const Footer = () => {
         <footer className="footer sm:footer-horizontal container mx-auto grid-cols-2 pt-10 pb-6 md:grid-cols-4">
           <aside className="col-span-2">
             <h2 className="text-xl font-semibold">Md. Firoz Mahmud Nur</h2>
-            <p className="mt-2 text-base">
+            <div className="mt-2 text-base">
               Full-Stack Web Developer
-              <p className="pt-2">
+              <div className="pt-2">
                 Passionate about building web applications with modern
                 technologies.
-              </p>
-            </p>
+              </div>
+            </div>
           </aside>
           <div className="col-span-2 grid w-full grid-cols-2 gap-8">
             <nav>

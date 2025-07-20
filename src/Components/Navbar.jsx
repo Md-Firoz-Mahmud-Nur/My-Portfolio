@@ -78,7 +78,7 @@ const Navbar = () => {
           </a>
         </li>
         <li>
-          <label className="swap swap-rotate py-0">
+          <label className="swap swap-rotate w-min px-2.5 py-1">
             <input
               type="checkbox"
               name="theme"
@@ -110,7 +110,7 @@ const Navbar = () => {
   );
   return (
     <div className="dark:shadow-base-100 sticky top-0 z-20 shadow-md backdrop-blur-lg dark:shadow-lg">
-      <div className="navbar container mx-auto rounded-sm via-transparent">
+      <div className="navbar container mx-auto min-h-[67px] rounded-sm via-transparent">
         <div className="navbar-start">
           <div className="dropdown">
             <button

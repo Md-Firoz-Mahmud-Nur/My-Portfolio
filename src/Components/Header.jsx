@@ -83,7 +83,7 @@ const Header = () => {
             }}
             className="h-56 min-w-[168px] border object-cover object-bottom backdrop-blur-lg"
             src="https://i.ibb.co.com/TxhSx7r8/Apply-Basic-Image.png"
-            alt="Md. Firoz Mahmud Nur - Web Developer"
+            alt="Md. Firoz Mahmud Nur - Full-Stack Web Developer"
             loading="lazy"
           />
           <div className="absolute top-0 size-4 translate-[-50%] translate-y-[-50%] border bg-transparent backdrop-blur-lg"></div>

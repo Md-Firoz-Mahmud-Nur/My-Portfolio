@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
 
-import Navbar from "./Components/Navbar";
+// import Navbar from "./Components/Navbar";
 import Header from "./Components/Header";
 import Skills from "./Components/Skills";
 import Projects from "./Components/Projects";
 import Education from "./Components/Education";
 import Contact from "./Components/Contact";
-import Footer from "./Components/Footer";
+// import Footer from "./Components/Footer";
 import Hr from "./Components/Hr";
 import SmoothScroll from "./SmoothScroll/SmoothScroll";
 import SkillsMarquee from "./Components/SkillsMarquee";
