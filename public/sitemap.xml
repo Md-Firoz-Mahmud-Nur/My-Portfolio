@@ -8,7 +8,7 @@
   <!-- Home Page -->
   <url>
     <loc>https://nurweb.dev/</loc>
-    <lastmod>2025-07-19</lastmod>
+    <lastmod>2025-07-21</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -16,7 +16,7 @@
   <!-- Projects Page -->
   <url>
     <loc>https://nurweb.dev/projects</loc>
-    <lastmod>2025-07-19</lastmod>
+    <lastmod>2025-07-21</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -24,9 +24,17 @@
   <!-- Contact Page -->
   <url>
     <loc>https://nurweb.dev/contact</loc>
-    <lastmod>2025-07-19</lastmod>
+    <lastmod>2025-07-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+
+  <!-- Netlify Home Page -->
+  <url>
+    <loc>https://md-firoz-mahmud-nur.netlify.app/</loc>
+    <lastmod>2025-07-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.4</priority>
   </url>
 
 </urlset>
