@@ -2,4 +2,3 @@ User-agent: *
 Disallow:
 
 Sitemap: https://nurweb.dev/sitemap.xml
-Sitemap: https://md-firoz-mahmud-nur.netlify.app/sitemap.xml
