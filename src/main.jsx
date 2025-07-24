@@ -9,7 +9,7 @@ import Contact from "./Components/Contact.jsx";
 import Root from "./Root.jsx";
 import ErrorPage from "./ErrorPage.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Projects from "./Components/Projects.jsx";
+import AllProject from "./Pages/AllProject.jsx";
 
 const router = createBrowserRouter([
   {
@@ -25,7 +25,7 @@ const router = createBrowserRouter([
         path: "/projects",
         element: (
           <div className="py-10">
-            <Projects></Projects>
+            <AllProject></AllProject>
           </div>
         ),
       },

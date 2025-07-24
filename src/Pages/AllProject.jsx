@@ -1,6 +1,6 @@
-import ProjectCard from "./ProjectCard";
+import ProjectCard from "../Components/ProjectCard";
 
-const Projects = () => {
+const AllProject = () => {
   const projectsInfo = [
     {
       title: "1. DevDive (Team Project)",
@@ -34,6 +34,30 @@ const Projects = () => {
         "https://github.com/Md-Firoz-Mahmud-Nur/0164-Fit-N-Flex-Arena-server-assignment-12-module-72",
       technologies: "React, Firebase, MongoDb, TailwindCSS",
     },
+    {
+      title: "4. Food Fare",
+      image: "https://i.ibb.co/ZMp1FJT/Screenshot-2024-07-04-172925.png",
+      description:
+        "Food Fare is a food donation website dedicated to connecting donors with local food banks and shelters.",
+      clientLink: "https://s0142-food-fare-ass-11-mod-63.web.app/",
+      clientGithub:
+        "https://github.com/Md-Firoz-Mahmud-Nur/0142-Food-Fare-client-assignment-11-module-63",
+      serverGithub:
+        "https://github.com/Md-Firoz-Mahmud-Nur/0143-Food-Fare-server-assignment-11-module-63",
+      technologies: "React, Firebase, MongoDb, TailwindCSS",
+    },
+    {
+      title: "5. Dream Tourism",
+      image: "https://i.ibb.co/dJwqRMs/Screenshot-2024-07-04-173015.png",
+      description:
+        "Explore the world with Dream Tourism. Discover curated travel packages and personalized itineraries for your next adventure.",
+      clientLink: "https://s0125-dream-tourism-a10-mod-57.web.app/",
+      clientGithub:
+        "https://github.com/Md-Firoz-Mahmud-Nur/0125-dream-tourism-client-assignment-10-module-57",
+      serverGithub:
+        "https://github.com/Md-Firoz-Mahmud-Nur/0124-dream-tourism-server-assignment-10-module-57",
+      technologies: "React, Firebase, MongoDb, TailwindCSS",
+    },
   ];
 
   return (
@@ -50,4 +74,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default AllProject;

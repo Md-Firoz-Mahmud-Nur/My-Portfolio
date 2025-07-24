@@ -31,15 +31,39 @@ const ProjectCard = ({
           <CiGlobe className="size-5" />
         </a>{" "}
         |{" "}
-        <a href={clientGithub} aria-label="GitHub Client">
+        {/* <a href={clientGithub} aria-label="GitHub Client">
           <FaGithub className="size-5" />
-        </a>
+        </a> */}
+        {clientGithub === "Not Available" ? (
+          <span
+            className="cursor-not-allowed text-gray-400"
+            title="Not Available"
+          >
+            <FaGithub className="size-5" />
+          </span>
+        ) : (
+          <a href={clientGithub} aria-label="GitHub Client">
+            <FaGithub className="size-5" />
+          </a>
+        )}
       </p>
       <p className="flex items-center gap-2 font-semibold">
         Server Side Link:{" "}
-        <a href={serverGithub} aria-label="GitHub Server">
+        {/* <a href={serverGithub} aria-label="GitHub Server">
           <FaGithub className="size-5" />
-        </a>
+        </a> */}
+        {serverGithub === "Not Available" ? (
+          <span
+            className="cursor-not-allowed text-gray-400"
+            title="Not Available"
+          >
+            <FaGithub className="size-5" />
+          </span>
+        ) : (
+          <a href={serverGithub} aria-label="GitHub Client">
+            <FaGithub className="size-5" />
+          </a>
+        )}
       </p>
     </div>
   );
