@@ -25,7 +25,7 @@ const Footer = () => {
                     behavior: "smooth",
                   });
                 }, 1);
-                
+
                 // e.preventDefault();
                 // window.scrollTo({
                 //   top: document.getElementById(section).offsetTop - 145,
@@ -39,7 +39,7 @@ const Footer = () => {
         ))}
       </>
     ),
-    [],
+    [navigate],
   );
 
   return (
