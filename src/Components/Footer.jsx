@@ -1,9 +1,12 @@
 import { useMemo } from "react";
 import { FaLinkedin, FaWhatsapp, FaGithub } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
+import { useNavigate } from "react-router-dom";
 const sections = ["home", "skills", "projects", "education", "contact"];
 
 const Footer = () => {
+  const navigate = useNavigate();
+
   const links = useMemo(
     () => (
       <>
@@ -13,11 +16,21 @@ const Footer = () => {
               href={`#${section}`}
               className={`hover:text-primary transition-all duration-300 ease-in-out`}
               onClick={(e) => {
+                navigate("/");
                 e.preventDefault();
-                window.scrollTo({
-                  top: document.getElementById(section).offsetTop - 145,
-                  behavior: "smooth",
-                });
+
+                setTimeout(() => {
+                  window.scrollTo({
+                    top: document.getElementById(section).offsetTop - 145,
+                    behavior: "smooth",
+                  });
+                }, 1);
+                
+                // e.preventDefault();
+                // window.scrollTo({
+                //   top: document.getElementById(section).offsetTop - 145,
+                //   behavior: "smooth",
+                // });
               }}
             >
               {section.charAt(0).toUpperCase() + section.slice(1)}
