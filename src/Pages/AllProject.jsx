@@ -61,7 +61,7 @@ const AllProject = () => {
   ];
 
   return (
-    <section id="projects">
+    <section id="allProjects">
       <h2 className="mx-auto mb-12 max-w-max pb-2 text-center text-3xl font-bold tracking-tight backdrop-blur-lg md:mb-16 md:text-4xl">
         Projects
       </h2>

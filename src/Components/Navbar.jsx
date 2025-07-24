@@ -2,10 +2,13 @@ import { useContext, useMemo, useState } from "react";
 import "./Navbar.css";
 import { Context } from "../Context/Context";
 const sections = ["home", "skills", "projects", "education", "contact"];
+import { useNavigate } from "react-router-dom";
 
 const Navbar = () => {
   const { isDark, toggleTheme } = useContext(Context);
   const [isOpen, setIsOpen] = useState(false);
+  const navigate = useNavigate();
+
   // const [activeSection, setActiveSection] = useState("home");
 
   // useEffect(() => {
@@ -46,7 +49,7 @@ const Navbar = () => {
         {sections.map((section) => (
           <li key={section}>
             <a
-              href={`#${section}`}
+              href={`/`}
               className={`hover:text-primary transition-all duration-300 ease-in-out`}
               // className={`transition-all duration-300 ease-in-out ${
               //   activeSection === section
@@ -54,12 +57,22 @@ const Navbar = () => {
               //     : "hover:text-primary"
               // }`}
               onClick={(e) => {
+                navigate("/");
                 e.preventDefault();
-                window.scrollTo({
-                  top: document.getElementById(section).offsetTop - 145,
-                  behavior: "smooth",
-                });
-                closeDropdown();
+
+                setTimeout(() => {
+                  window.scrollTo({
+                    top: document.getElementById(section).offsetTop - 145,
+                    behavior: "smooth",
+                  });
+                  closeDropdown();
+                }, 1);
+
+                // window.scrollTo({
+                //   top: document.getElementById(section).offsetTop - 145,
+                //   behavior: "smooth",
+                // });
+                // closeDropdown();
               }}
             >
               {section.charAt(0).toUpperCase() + section.slice(1)}
@@ -107,7 +120,7 @@ const Navbar = () => {
         </li>
       </>
     ),
-    [isDark, toggleTheme],
+    [isDark, toggleTheme, navigate],
   );
   return (
     <div className="dark:shadow-base-100 sticky top-0 z-20 shadow-md backdrop-blur-lg dark:shadow-lg">
@@ -145,13 +158,23 @@ const Navbar = () => {
             )}
           </div>
           <a
-            href="#home"
+            href="/"
             onClick={(e) => {
+              navigate("/");
               e.preventDefault();
-              window.scrollTo({
-                top: document.getElementById("home").offsetTop - 68,
-                behavior: "smooth",
-              });
+
+              setTimeout(() => {
+                window.scrollTo({
+                  top: document.getElementById("home").offsetTop - 68,
+                  behavior: "smooth",
+                });
+              }, 1);
+
+              // e.preventDefault();
+              // window.scrollTo({
+              //   top: document.getElementById("home").offsetTop - 68,
+              //   behavior: "smooth",
+              // });
             }}
             className="btn btn-ghost text-xl"
           >
