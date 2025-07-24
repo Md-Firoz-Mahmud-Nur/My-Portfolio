@@ -46,6 +46,11 @@ const Projects = () => {
           <ProjectCard key={project.title} {...project} />
         ))}
       </div>
+      <div className="mt-20 flex justify-center">
+        <a href="/projects" className="btn btn-outline px-20 backdrop-blur-lg">
+          All Projects
+        </a>
+      </div>
     </section>
   );
 };
