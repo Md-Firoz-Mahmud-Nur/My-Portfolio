@@ -1,8 +1,8 @@
 import { useContext, useMemo, useState } from "react";
-import "./Navbar.css";
-import { Context } from "../Context/Context";
-const sections = ["home", "skills", "projects", "education", "contact"];
 import { useNavigate } from "react-router-dom";
+import { Context } from "../Context/Context";
+import "./Navbar.css";
+const sections = ["home", "skills", "projects", "education", "contact"];
 
 const Navbar = () => {
   const { isDark, toggleTheme } = useContext(Context);

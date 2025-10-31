@@ -13,6 +13,7 @@
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.8.1",
     "aos": "^2.3.4",
+    "gsap": "^3.13.0",
     "lenis": "^1.1.22",
     "localforage": "^1.10.0",
     "lottie-react": "^2.4.1",

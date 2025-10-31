@@ -1,8 +1,32 @@
+import gsap from "gsap";
+import SplitText from "gsap/SplitText";
+import { useEffect, useRef } from "react";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import Test from "./SvgBorderAnimation";
 
 const Header = () => {
+  const titleRef = useRef(null);
+
+  useEffect(() => {
+    const split = SplitText.create(titleRef.current, {
+      type: "lines, words",
+      mask: "lines",
+      autoSplit: true,
+      onSplit(self) {
+        gsap.from(self.words, {
+          duration: 1,
+          y: 100,
+          autoAlpha: 0,
+          stagger: 0.05,
+          ease: "power4.out",
+        });
+      },
+    });
+
+    return () => split.revert();
+  }, []);
+
   return (
     <div className="flex flex-col-reverse md:flex-row" id="home">
       <header
@@ -10,6 +34,12 @@ const Header = () => {
         className="bg-opacity-50 flex grow flex-col items-center justify-center p-10 text-center"
       >
         <h1 className="mb-4 text-xl font-bold backdrop-blur-lg sm:text-4xl sm:font-semibold">
+          Md. Firoz Mahmud Nur
+        </h1>
+        <h1
+          ref={titleRef}
+          className="split mb-4 text-xl font-bold backdrop-blur-lg sm:text-4xl sm:font-semibold"
+        >
           Md. Firoz Mahmud Nur
         </h1>
         <h2 className="mb-4 max-w-min text-lg text-nowrap backdrop-blur-lg sm:text-xl">
