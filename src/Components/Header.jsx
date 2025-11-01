@@ -6,20 +6,41 @@ import { SiGmail } from "react-icons/si";
 import Test from "./SvgBorderAnimation";
 
 const Header = () => {
+  const nameRef = useRef(null);
   const titleRef = useRef(null);
 
   useEffect(() => {
-    const split = SplitText.create(titleRef.current, {
-      type: "lines, words",
+    const split = SplitText.create(nameRef.current, {
+      type: "lines, chars",
       mask: "lines",
       autoSplit: true,
       onSplit(self) {
-        gsap.from(self.words, {
-          duration: 1,
+        gsap.from(self.chars, {
+          duration: 0.3,
           y: 100,
           autoAlpha: 0,
           stagger: 0.05,
           ease: "power4.out",
+        });
+      },
+    });
+
+    return () => split.revert();
+  }, []);
+
+  useEffect(() => {
+    const split = SplitText.create(titleRef.current, {
+      type: "lines, chars",
+      mask: "lines",
+      autoSplit: true,
+      onSplit(self) {
+        gsap.from(self.chars, {
+          duration: 0.2,
+          y: 100,
+          autoAlpha: 0,
+          stagger: 0.05,
+          ease: "power4.out",
+          delay: 0.25,
         });
       },
     });
@@ -33,16 +54,16 @@ const Header = () => {
         id="header"
         className="bg-opacity-50 flex grow flex-col items-center justify-center p-10 text-center"
       >
-        <h1 className="mb-4 text-xl font-bold backdrop-blur-lg sm:text-4xl sm:font-semibold">
-          Md. Firoz Mahmud Nur
-        </h1>
         <h1
-          ref={titleRef}
+          ref={nameRef}
           className="split mb-4 text-xl font-bold backdrop-blur-lg sm:text-4xl sm:font-semibold"
         >
           Md. Firoz Mahmud Nur
         </h1>
-        <h2 className="mb-4 max-w-min text-lg text-nowrap backdrop-blur-lg sm:text-xl">
+        <h2
+          ref={titleRef}
+          className="mb-4 max-w-min text-lg text-nowrap backdrop-blur-lg sm:text-xl"
+        >
           Full-Stack Web Developer
         </h2>
         <div className="mx-auto flex max-w-xl flex-col items-center justify-center">
