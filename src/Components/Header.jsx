@@ -8,44 +8,130 @@ import Test from "./SvgBorderAnimation";
 const Header = () => {
   const nameRef = useRef(null);
   const titleRef = useRef(null);
+  const para1Ref = useRef(null);
+  const para2Ref = useRef(null);
+
+  // useEffect(() => {
+  //   const split = SplitText.create(nameRef.current, {
+  //     type: "lines, chars",
+  //     mask: "lines",
+  //     autoSplit: true,
+  //     onSplit(self) {
+  //       gsap.from(self.chars, {
+  //         duration: 0.3,
+  //         y: 100,
+  //         autoAlpha: 0,
+  //         stagger: 0.05,
+  //         ease: "power4.out",
+  //       });
+  //     },
+  //   });
+
+  //   return () => split.revert();
+  // }, []);
+
+  // useEffect(() => {
+  //   const split = SplitText.create(titleRef.current, {
+  //     type: "lines, chars",
+  //     mask: "lines",
+  //     autoSplit: true,
+  //     onSplit(self) {
+  //       gsap.from(self.chars, {
+  //         duration: 0.2,
+  //         y: 100,
+  //         autoAlpha: 0,
+  //         stagger: 0.05,
+  //         ease: "power4.out",
+  //         delay: 0.25,
+  //       });
+  //     },
+  //   });
+
+  //   return () => split.revert();
+  // }, []);
 
   useEffect(() => {
-    const split = SplitText.create(nameRef.current, {
+    // Create a master timeline for clean sequencing
+    const tl = gsap.timeline();
+
+    // ====== 1️⃣ Animate Name (chars) ======
+    const splitName = SplitText.create(nameRef.current, {
       type: "lines, chars",
       mask: "lines",
       autoSplit: true,
-      onSplit(self) {
-        gsap.from(self.chars, {
-          duration: 0.3,
-          y: 100,
-          autoAlpha: 0,
-          stagger: 0.05,
-          ease: "power4.out",
-        });
-      },
     });
 
-    return () => split.revert();
-  }, []);
+    tl.from(splitName.chars, {
+      duration: 0.3,
+      y: 100,
+      autoAlpha: 0,
+      stagger: 0.05,
+      ease: "power4.out",
+    });
 
-  useEffect(() => {
-    const split = SplitText.create(titleRef.current, {
+    // ====== 2️⃣ Animate Title (chars) ======
+    const splitTitle = SplitText.create(titleRef.current, {
       type: "lines, chars",
       mask: "lines",
       autoSplit: true,
-      onSplit(self) {
-        gsap.from(self.chars, {
-          duration: 0.2,
-          y: 100,
-          autoAlpha: 0,
-          stagger: 0.05,
-          ease: "power4.out",
-          delay: 0.25,
-        });
-      },
     });
 
-    return () => split.revert();
+    tl.from(
+      splitTitle.chars,
+      {
+        duration: 0.2,
+        y: 100,
+        autoAlpha: 0,
+        stagger: 0.05,
+        ease: "power4.out",
+      },
+      ">+0.2",
+    );
+
+    // ====== 3️⃣ Animate Paragraph 1 (words) ======
+    const splitPara1 = SplitText.create(para1Ref.current, {
+      type: "words",
+      autoSplit: true,
+    });
+
+    tl.from(
+      splitPara1.words,
+      {
+        duration: 0.6,
+        y: 40,
+        autoAlpha: 0,
+        stagger: 0.04,
+        ease: "power4.out",
+      },
+      ">+0.3",
+    );
+
+    // ====== 4️⃣ Animate Paragraph 2 (lines) ======
+    const splitPara2 = SplitText.create(para2Ref.current, {
+      type: "lines",
+      mask: "lines",
+      autoSplit: true,
+    });
+
+    tl.from(
+      splitPara2.lines,
+      {
+        duration: 0.8,
+        y: 50,
+        autoAlpha: 0,
+        stagger: 0.15,
+        ease: "power4.out",
+      },
+      ">+0.4",
+    );
+
+    // Cleanup to prevent double-splitting on re-render
+    return () => {
+      splitName.revert();
+      splitTitle.revert();
+      splitPara1.revert();
+      splitPara2.revert();
+    };
   }, []);
 
   return (
@@ -56,7 +142,7 @@ const Header = () => {
       >
         <h1
           ref={nameRef}
-          className="split mb-4 text-xl font-bold backdrop-blur-lg sm:text-4xl sm:font-semibold"
+          className="mb-4 text-xl font-bold backdrop-blur-lg sm:text-4xl sm:font-semibold"
         >
           Md. Firoz Mahmud Nur
         </h1>
@@ -68,12 +154,12 @@ const Header = () => {
         </h2>
         <div className="mx-auto flex max-w-xl flex-col items-center justify-center">
           <div className="flex flex-col gap-4 backdrop-blur-lg">
-            <p>
+            <p ref={para1Ref}>
               Hi, I&apos;m a passionate and dedicated full-stack web developer
               with a keen eye for design and a strong understanding of user
               experience.
             </p>
-            <p>
+            <p ref={para2Ref}>
               <strong>Nur</strong> is currently looking for opportunities to
               work on challenging projects and contribute to the growth of the
               industry. Feel free to reach out if you&apos;re interested in
