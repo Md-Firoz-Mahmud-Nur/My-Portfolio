@@ -11,121 +11,69 @@ const Header = () => {
   const para1Ref = useRef(null);
   const para2Ref = useRef(null);
 
-  // useEffect(() => {
-  //   const split = SplitText.create(nameRef.current, {
-  //     type: "lines, chars",
-  //     mask: "lines",
-  //     autoSplit: true,
-  //     onSplit(self) {
-  //       gsap.from(self.chars, {
-  //         duration: 0.3,
-  //         y: 100,
-  //         autoAlpha: 0,
-  //         stagger: 0.05,
-  //         ease: "power4.out",
-  //       });
-  //     },
-  //   });
-
-  //   return () => split.revert();
-  // }, []);
-
-  // useEffect(() => {
-  //   const split = SplitText.create(titleRef.current, {
-  //     type: "lines, chars",
-  //     mask: "lines",
-  //     autoSplit: true,
-  //     onSplit(self) {
-  //       gsap.from(self.chars, {
-  //         duration: 0.2,
-  //         y: 100,
-  //         autoAlpha: 0,
-  //         stagger: 0.05,
-  //         ease: "power4.out",
-  //         delay: 0.25,
-  //       });
-  //     },
-  //   });
-
-  //   return () => split.revert();
-  // }, []);
-
   useEffect(() => {
-    // Create a master timeline for clean sequencing
     const tl = gsap.timeline();
 
-    // ====== 1️⃣ Animate Name (chars) ======
     const splitName = SplitText.create(nameRef.current, {
-      type: "lines, chars",
+      type: "chars",
       mask: "lines",
       autoSplit: true,
     });
 
     tl.from(splitName.chars, {
-      duration: 0.3,
+      duration: 0.2,
       y: 100,
+      x: 50,
+      opacity: 0,
       autoAlpha: 0,
       stagger: 0.05,
       ease: "power4.out",
     });
 
-    // ====== 2️⃣ Animate Title (chars) ======
     const splitTitle = SplitText.create(titleRef.current, {
-      type: "lines, chars",
-      mask: "lines",
+      type: "words",
       autoSplit: true,
     });
 
-    tl.from(
-      splitTitle.chars,
-      {
-        duration: 0.2,
-        y: 100,
-        autoAlpha: 0,
-        stagger: 0.05,
-        ease: "power4.out",
-      },
-      ">+0.2",
-    );
+    tl.from(splitTitle.words, {
+      duration: 0.2,
+      y: 50,
+      x: 30,
+      rotate: 45,
+      opacity: 0,
+      autoAlpha: 0,
+      stagger: 0.15,
+      ease: "power4.out",
+    });
 
-    // ====== 3️⃣ Animate Paragraph 1 (words) ======
     const splitPara1 = SplitText.create(para1Ref.current, {
       type: "words",
       autoSplit: true,
     });
 
-    tl.from(
-      splitPara1.words,
-      {
-        duration: 0.6,
-        y: 40,
-        autoAlpha: 0,
-        stagger: 0.04,
-        ease: "power4.out",
-      },
-      ">+0.3",
-    );
+    tl.from(splitPara1.words, {
+      duration: 0.3,
+      y: 40,
+      opacity: 0,
+      autoAlpha: 0,
+      stagger: 0.04,
+      ease: "power4.out",
+    });
 
-    // ====== 4️⃣ Animate Paragraph 2 (lines) ======
     const splitPara2 = SplitText.create(para2Ref.current, {
       type: "lines",
-      mask: "lines",
       autoSplit: true,
     });
 
-    tl.from(
-      splitPara2.lines,
-      {
-        duration: 0.8,
-        y: 50,
-        autoAlpha: 0,
-        stagger: 0.15,
-        ease: "power4.out",
-      },
-      ">+0.4",
-    );
+    tl.from(splitPara2.lines, {
+      duration: 0.2,
+      y: 30,
+      opacity: 0,
+      autoAlpha: 0,
+      stagger: 0.15,
+      ease: "power4.out",
+    });
 
-    // Cleanup to prevent double-splitting on re-render
     return () => {
       splitName.revert();
       splitTitle.revert();
