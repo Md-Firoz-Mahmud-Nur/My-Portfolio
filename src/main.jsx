@@ -1,15 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.jsx";
-import "./index.css";
-import ParticlesAnimation from "./ParticlesAnimation/ParticlesAnimation.jsx";
-import CursorAnimation from "./CursorAnimation/CursorAnimation.jsx";
-import Provider from "./Context/Context.jsx";
-import Contact from "./Components/Contact.jsx";
-import Root from "./Root.jsx";
-import ErrorPage from "./ErrorPage.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import App from "./App.jsx";
+import Contact from "./Components/Contact.jsx";
+import Provider from "./Context/Context.jsx";
+import CursorAnimation from "./CursorAnimation/CursorAnimation.jsx";
+import ErrorPage from "./ErrorPage.jsx";
+import "./index.css";
 import AllProject from "./Pages/AllProject.jsx";
+import ParticlesAnimation from "./ParticlesAnimation/ParticlesAnimation.jsx";
+import Root from "./Root.jsx";
 
 const router = createBrowserRouter([
   {
@@ -32,6 +32,14 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact></Contact>,
+      },
+      {
+        path: "/fifco",
+        element: (
+          <div className="flex h-screen w-full items-center justify-center bg-amber-50 text-6xl">
+            FIFCO Website
+          </div>
+        ),
       },
     ],
   },
