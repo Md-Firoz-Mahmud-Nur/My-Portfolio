@@ -3,7 +3,7 @@ import SplitText from "gsap/SplitText";
 import { useEffect, useRef } from "react";
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-import Test from "./SvgBorderAnimation";
+import SvgBorderAnimation from "./SvgBorderAnimation";
 
 const Header = () => {
   const nameRef = useRef(null);
@@ -147,7 +147,7 @@ const Header = () => {
                 <SiGmail className="size-8" />
               </a>
             </div>
-            <Test></Test>
+            <SvgBorderAnimation></SvgBorderAnimation>
           </div>
         </div>
       </header>
