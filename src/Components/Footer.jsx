@@ -62,7 +62,7 @@ const Footer = () => {
               {links}
               <a
                 href="/Resume of Md Firoz Mahmud Nur.pdf"
-                download="/Resume of Md Firoz Mahmud Nur.pdf"
+                download="Resume of Md Firoz Mahmud Nur.pdf"
                 className="link link-hover"
               >
                 Resume
