@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { FaLinkedin, FaWhatsapp, FaGithub } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { useNavigate } from "react-router-dom";
 const sections = ["home", "skills", "projects", "education", "contact"];
@@ -25,12 +25,6 @@ const Footer = () => {
                     behavior: "smooth",
                   });
                 }, 1);
-
-                // e.preventDefault();
-                // window.scrollTo({
-                //   top: document.getElementById(section).offsetTop - 145,
-                //   behavior: "smooth",
-                // });
               }}
             >
               {section.charAt(0).toUpperCase() + section.slice(1)}
