@@ -1,16 +1,13 @@
 import { useEffect, useState } from "react";
-
-// import Navbar from "./Components/Navbar";
-import Header from "./Components/Header";
-import Skills from "./Components/Skills";
-import Projects from "./Components/Projects";
-import Education from "./Components/Education";
 import Contact from "./Components/Contact";
-// import Footer from "./Components/Footer";
+import Education from "./Components/Education";
+import Header from "./Components/Header";
 import Hr from "./Components/Hr";
-import SmoothScroll from "./SmoothScroll/SmoothScroll";
+import Projects from "./Components/Projects";
+import Skills from "./Components/Skills";
 import SkillsMarquee from "./Components/SkillsMarquee";
 import CheckDesktop from "./Hooks/CheckDesktop";
+import SmoothScroll from "./SmoothScroll/SmoothScroll";
 
 export default function App() {
   const showCursor = CheckDesktop();
@@ -25,7 +22,6 @@ export default function App() {
   return (
     <>
       <SmoothScroll>
-        {/* <Navbar></Navbar> */}
         <div
           className="container mx-auto"
           style={{
@@ -42,7 +38,6 @@ export default function App() {
           <Hr></Hr>
           <Contact></Contact>
         </div>
-        {/* <Footer></Footer> */}
       </SmoothScroll>
     </>
   );
