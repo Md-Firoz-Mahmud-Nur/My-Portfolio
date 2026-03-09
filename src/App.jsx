@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import Contact from "./Components/Contact";
 import Education from "./Components/Education";
 import Header from "./Components/Header";
@@ -11,22 +10,22 @@ import SmoothScroll from "./SmoothScroll/SmoothScroll";
 
 export default function App() {
   const showCursor = CheckDesktop();
-  const [scrollY, setScrollY] = useState(0);
+  // const [scrollY, setScrollY] = useState(0);
 
-  useEffect(() => {
-    const handleScroll = () => setScrollY(window.scrollY);
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  // useEffect(() => {
+  //   const handleScroll = () => setScrollY(window.scrollY);
+  //   window.addEventListener("scroll", handleScroll);
+  //   return () => window.removeEventListener("scroll", handleScroll);
+  // }, []);
 
   return (
     <>
       <SmoothScroll>
         <div
           className="container mx-auto"
-          style={{
-            clipPath: `inset(${scrollY}px 0 0 0)`,
-          }}
+          // style={{
+          //   clipPath: `inset(${scrollY}px 0 0 0)`,
+          // }}
         >
           <Header></Header>
           <Hr></Hr>
