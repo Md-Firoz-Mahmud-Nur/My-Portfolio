@@ -123,7 +123,7 @@ const Navbar = () => {
     [isDark, toggleTheme, navigate],
   );
   return (
-    <div className="dark:shadow-base-100 sticky top-0 z-20 shadow-md backdrop-blur-lg dark:shadow-lg">
+    <div className="dark:shadow-base-100 sticky top-0 z-20 bg-white/50 shadow-md backdrop-blur-lg dark:bg-black/50 dark:shadow-lg">
       <div className="navbar container mx-auto min-h-[67px] rounded-sm via-transparent">
         <div className="navbar-start">
           <div className="dropdown">
