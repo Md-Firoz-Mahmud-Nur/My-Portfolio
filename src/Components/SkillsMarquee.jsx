@@ -1,18 +1,18 @@
+import { useContext } from "react";
 import Marquee from "react-fast-marquee";
-import html5 from "../assets/html5.png";
 import css3 from "../assets/css3.png";
-import tailwind from "../assets/tailwind.png";
-import js from "../assets/js.png";
-import react from "../assets/react.png";
-import mongo from "../assets/mongo.png";
-import node from "../assets/node.png";
 import express from "../assets/express.png";
 import firebase from "../assets/firebase.png";
+import html5 from "../assets/html5.png";
+import js from "../assets/js.png";
+import mongo from "../assets/mongo.png";
 import nextJS from "../assets/nextJS.png";
-import redux from "../assets/redux.png";
-import typescript from "../assets/typescript.png";
+import node from "../assets/node.png";
 import postgresql from "../assets/postgresql.png";
-import { useContext } from "react";
+import react from "../assets/react.png";
+import redux from "../assets/redux.png";
+import tailwind from "../assets/tailwind.png";
+import typescript from "../assets/typescript.png";
 import { Context } from "../Context/Context";
 
 const SkillsMarquee = () => {
@@ -29,7 +29,7 @@ const SkillsMarquee = () => {
     nextJS,
     redux,
     typescript,
-    postgresql
+    postgresql,
   ];
 
   const { isDark } = useContext(Context);
@@ -47,7 +47,7 @@ const SkillsMarquee = () => {
         speed={130}
         gradient={true}
         gradientColor={
-          isDark === "dark" ? "rgba(0,0,0,1)" : "rgba(255,255,255,1)"
+          isDark === "dark" ? "rgba(29,35,42,1)" : "rgba(255,255,255,1)"
         }
         gradientWidth={100}
       >
