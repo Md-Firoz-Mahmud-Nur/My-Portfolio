@@ -40,7 +40,7 @@ const SkillsMarquee = () => {
         My Skills
       </h2>
       <Marquee
-        className="h-[215px] w-full overflow-hidden"
+        className="h-53.75 w-full overflow-hidden"
         direction="left"
         scrollDelay={0}
         pauseOnHover
@@ -54,7 +54,7 @@ const SkillsMarquee = () => {
         {image.map((img, i) => (
           <div
             key={i}
-            className="mx-3 w-[100px] rounded-lg border p-3 shadow-lg backdrop-blur-lg transition duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-gray-600 md:w-[150px] lg:mx-4"
+            className="mx-3 w-25 rounded-lg border p-3 shadow-lg backdrop-blur-lg transition duration-300 hover:-translate-y-2 hover:shadow-xl hover:shadow-gray-600 md:w-37.5 lg:mx-4"
           >
             <img src={img} loading="lazy" alt="" className="w-full" />
           </div>
