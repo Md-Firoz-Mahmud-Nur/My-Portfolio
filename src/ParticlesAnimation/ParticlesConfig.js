@@ -16,9 +16,9 @@ const ParticlesConfig = (isDark) => ({
     zIndex: -10,
   },
   background: {
-    color: {
-      value: isDark === "dark" ? "#000000" : "#ffffff",
-    },
+    // color: {
+    //   value: isDark === "dark" ? "#000000" : "#ffffff",
+    // },
   },
   backgroundMask: {
     composite: "destination-out",
