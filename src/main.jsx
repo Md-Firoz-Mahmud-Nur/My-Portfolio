@@ -10,6 +10,7 @@ import "./index.css";
 import AllProject from "./Pages/AllProject.jsx";
 import ParticlesAnimation from "./ParticlesAnimation/ParticlesAnimation.jsx";
 import Root from "./Root.jsx";
+import { StarsCanvas } from "./StarsCanvas/starBackground.jsx";
 
 const router = createBrowserRouter([
   {
@@ -48,6 +49,7 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Provider>
+      <StarsCanvas></StarsCanvas>
       <ParticlesAnimation></ParticlesAnimation>
       <CursorAnimation></CursorAnimation>
       {/* <App /> */}
