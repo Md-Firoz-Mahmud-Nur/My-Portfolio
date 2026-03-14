@@ -1,7 +1,8 @@
 import { PointMaterial, Points } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
 import * as random from "maath/random";
-import { Suspense, useRef, useState } from "react";
+import { Suspense, useContext, useRef, useState } from "react";
+import { Context } from "../Context/Context";
 
 const StarBackground = (props) => {
   const ref = useRef(null);
@@ -38,6 +39,10 @@ const StarBackground = (props) => {
 };
 
 export const StarsCanvas = () => {
+  const { isDark } = useContext(Context);
+
+  if (isDark !== "dark") return null;
+
   return (
     <div className="fixed inset-0 -z-10 h-full w-full">
       <Canvas camera={{ position: [0, 0, 1] }}>
