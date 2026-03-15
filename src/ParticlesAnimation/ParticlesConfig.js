@@ -10,7 +10,7 @@ import typescriptIcon from "../assets/particles/typescriptIcon.svg";
 import vueIcon from "../assets/particles/vueIcon.svg";
 import wordpress from "../assets/particles/wordpressIcon.svg";
 
-const ParticlesConfig = (isDark) => ({
+const ParticlesConfig = () => ({
   fullScreen: {
     enable: true,
     zIndex: -10,

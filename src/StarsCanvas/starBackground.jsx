@@ -18,6 +18,7 @@ const StarBackground = (props) => {
   });
 
   return (
+    // eslint-disable-next-line react/no-unknown-property
     <group rotation={[0, 0, Math.PI / 4]}>
       <Points
         ref={ref}
